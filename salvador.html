@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="salvador.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/salvador-dali-1024.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Salvador Dalí</h1>
+          <p class="partist">Salvador Domingo Felipe Jacinto Dalí i Domènech, or Salvador Dalí for short, was a Catalan surrealist painter. Famous for the strange and striking images in his surreal works, Dali finished his most popular work, The Persistence of Memory, in 1931.(11.05.1904-23.01.1989)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/dalimorphologicalecho.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">Morphological Echo</h2>
+        <p class="p1">Morphological Echo is a painting produced by Salvador Dali between 1934 and 1936. The Spanish painter painted second version of this painting in 1936. Morphological Echo consists of several surrealist images which includes wall with a bell at far distance, a strange eroded rock.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/dalimorphologicalecho.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/dalipercistanceofmemory.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">The Persistence of Memory</h2>
+          <p class="p">The Persistence of Memory is a painting produced by Salvador Dali in 1931. This painting is best known for its Surrealism style and also known by the name Melting Clocks. The theme of this painting is time which is painted in different meaning representing that time is melting.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/dalipercistanceofmemory.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/daliDisintegrationofPersistence.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Disintegration of the Persistence of Memory</h2>
+          <p class="p">The Disintegration of the Persistence of Memory is a painting produced by Salvado Dali between 1952 and 1954. The Spanish painter recreated this painting from a painting painted in 1931 named as The Persistence of Memory. The original name of this paining is The Chromosome of a highly colored Fish’s Eye Starting the Harmonious Disintegration of the Persistence of Memory.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/daliDisintegrationofPersistence.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/daliMetamorphosis_of_Narcissus.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Metamorphosis of Narcissus</h2>
+          <p class="p">Metamorphosis of Narcissus is a painting produced by Salvado Dali in 1937. This painting from the french artist is from a Paranoiac critical period. Narcissus loved only himself and in doing so he broke many hearts and this great beauty of his is represented in this painting.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/daliMetamorphosis_of_Narcissus.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/dalislavemarketBust_Voltaire.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Slave Market with the Disappearing Bust of Voltaire</h2>
+          <p class="p">Slave Market with the Disappearing Bust of Voltaire is a painting produced by Salvado Dali in 1940. This painting is the most effective painting of Salvador dali which represents double image. A slave market is shown and group of figures moving gave an illusion of Voltaire’s head.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/dalislavemarketBust_Voltaire.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/daliThe_Hallucinogenic_Toreador.png" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Hallucinogenic Toreador</h2>
+          <p class="p">The Hallucinogenic Toreador is a painting produced by Salvado Dali between 1968 and 1970. This painting got exhibited the same year of 1970 when it was completed. The painting is assumend to be submerged in colors of the national flag of Spain.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/daliThe_Hallucinogenic_Toreador.png"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/daliChrist_of_Saint_John_of_the_Cross.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Christ of Saint John of the Cross</h2>
+          <p class="p">Christ of Saint John of the Cross is a painting produced by Salvado Dali in 1951. The name of this painting was based on an earlier painting named John of the Cross of 16th century as there drawing were similar to each other.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/daliChrist_of_Saint_John_of_the_Cross.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/dalitemptationofstanthony.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Temptation of St. Anthony</h2>
+          <p class="p">The Temptation of St. Anthony is a painting produced by Salvador Dali in 1946. This painting by the Spanish artist is best known by the name Dalí Renaissance. A group of elephants with horses is shown approaching St. Anthony.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/dalitemptationofstanthony.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/daliCabaret_Scene.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Cabaret Scene</h2>
+          <p class="p">Cabaret Scene is a painting produced by Salvador Dali in 1922. This painting is famous for its Cubist influence and the Spanish painter experimented for the first time with this painting. Dali got inspiration for this paintings from Pablo Picasso painting.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/daliCabaret_Scene.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./salvador.js"></script>
+ </body>
+</html>

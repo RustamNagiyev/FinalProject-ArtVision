@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="michelangelo.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Michelangelo1.webp" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Michelangelo</h1>
+          <p class="partist">Michelangelo di Lodovico Buonarroti Simoni is an Italian Renaissance painter, sculptor, architect and poet. Michelangelo was born on March 6, 1475, in Caprese, near Arezzo. His family moved to Florence when he was just a month old.(06.03.1475-18.02.1564)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/michelangelosistine1.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">The Sistine Chapel Ceiling </h2>
+        <p class="p">As soon as you hear Michelangelo artworks, the first painting that comes to mind instantly is the one on the ceiling of the Sistine Chapel. The ceiling of this chapel in the Vatican City displays stunning fresco Michelangelo’s painting curated by Michelangelo. Pope Julius II commissioned this work, and Michelangelo developed this between 1508 and 1512. This painting is the High Renaissance’s most significant works and depicts all the nine stories featured in the Book of Genesis. Initially, Michelangelo was reluctant to take up this work. The art lovers hugely appreciated the results back then, and even now, around five million people flock here to witness this marvelous work by him.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/michelangelosistine1.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/michelangelosistinechapel.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">The Last Judgment Painting, Sistine Chapel</h2>
+          <p class="p">Another masterpiece of Michelangelo’s paintings in the Sistine Chapel is the “Last Judgment”. In this painting Michelangelo’s painting adorns the altar wall of the chapel. Michelangelo executed this painting about 25 years after the creation of the artistic fresco on the chapel’s ceiling. Often cited as the most intricate pieces made by Michelangelo, this spectacular work is a fine portrayal of the final judgment of mankind by God. This Michelangelo painting depicted nudity, and due to this, it had a very controversial past, so much so that the Council of Trent ordered to cover up the parts that seemed obscene. 
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/michelangelosistinechapel.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/michelangelotorment.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Torment of Saint Anthony</h2>
+          <p class="p">The Torment of Saint Anthony is one of the first works of art by Michelangelo, which he created when he was just twelve or thirteen years old. Currently, The Kimbell Art Museum in Texas houses this painting. This painting is based on an engraved art piece initially created by Martin Schongauer, who was a German printmaker and painter. The first biographers of Michelangelo, Ascanio Condivi, and Giorgio Vasari, have cited this painting in their work. This is a particularly accomplished art piece which has received tremendous appreciation worldwide, since its creation.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/michelangelotorment.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/michelangelodonitondo.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Doni Tondo</h2>
+          <p class="p">Doni Tondo, which means “The Holy Family,” is the only panel painting Michelangelo painted that has survived through the years. Michelangelo created this panel painting for Agnolo Doni, who was one of the wealthiest bankers in Florence. He created it to commemorate the banker’s marriage to Maddalena, who hailed from a noble Tuscan family (Strozzi). Michelangelo curated the original frame of this panel painting, which is a wonderful ornate wooden piece. Since the year 1653, this work of the artist resides in Galleria Degli Uffizi in Florence. The iridescent hues used in this Michelangelo painting with the subjects posing unnaturally, had earlier laid the groundwork the art movement by Mannerist.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/michelangelodonitondo.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/michelangelocrucifixion.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Crucifixion of St. Peter</h2>
+          <p class="p">The Crucifixion of St. Peter was the final fresco Michelangelo painted in his lifetime. Originally, Pope Paul III commissioned this painting in the year 1541. Currently, you can find this painting in Cappella Paolina in Vatican Palace. In contrast to the other depictions of St. Peter of the Renaissance era, Michelangelo focused on the death of this saint through this painting. 2004 saw the commencement of a five-year long restoration project worth €3.2 million. This project led to the revelation of a fascinating fact about Michelangelo depicting himself in the painting in the form of a figure clad with a blue turban in the upper left part of the painting.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/michelangelocrucifixion.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/Ademinyaradilisi.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Creation of Adam</h2>
+          <p class="p1">This is a legendary painting by Michelangelo, which finds its depiction as a part of the vast masterpiece that adorns the interiors of the Sistine Chapel. This painting is one of the most innovative depictions of how the creation of Adam commenced. Contrary to the traditional works of art, in this painting, God is not displayed as regal, aloof, and way above mortal beings. The artist considered it essential to depict God intimately with the mortal man.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/Ademinyaradilisi.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/michelangelofallofmankind.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Fall of Mankind and Expulsion from Paradise </h2>
+          <p class="p1">In the Fall of Mankind and Expulsion from Paradise Painting by Michelangelo signifies how humans must show their respect towards God and not draw influences by other distractions. The idea behind this painting is that if humans pay more attention to their possessions, they will land in several problems. Michelangelo perfectly captures the scene in this painting, which finds its roots in the Genesis, a book that encourages followers to go along the right course from God’s perspective.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/michelangelofallofmankind.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/michelangeloconversionofsaul.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Conversion of Saul Painting</h2>
+          <p class="p">This painting by Michelangelo displays an iconic event in the life of Saul, who was commonly known as “Paul the Apostle.” The artist made this stunning conversion painting in the later years of his life. Unfortunately, it failed to receive the same amount of popularity that was received by the other Michelangelo’s paintings. Perhaps the reason behind it was the moderate and modest use of the mannerist approach in the painting. However, this artwork is popular now and finds its home in Cappella Paolina, located in the Vatican Palace.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/michelangeloconversionofsaul.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./michelangelo.js"></script>
+ </body>
+</html>

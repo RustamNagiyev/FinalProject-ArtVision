@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="joseph.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Joseph_Mallord_William_Turner_Self_Portrait_1799.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">J. M. W. Turner</h1>
+          <p class="partist">Joseph Mallord William Turner was an English painter. Influenced by the Romanticism movement. Turner; He was born in Maiden Lane, Covent Garden, London, England. His father, William Gay Turner, was a barber and wig maker.(23.04.1775-19.12.1851)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/turnerfisherman.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">Fishermen at Sea</h2>
+        <p class="p">Period: Romanticism
+            Created: 1796
+            
+            The first oil painting Turner exhibited at the Royal Academy, this is a moonlit scene in the tradition of Horace Vernet, Philip de Loutherbourg and Joseph Wright of Derby. These painters were largely responsible for fuelling the 18th-century vogue for nocturnal subjects. The sense of the overwhelming power of nature is a key theme of the Sublime. The potency of the moonlight contrasts with the delicate vulnerability of the flickering lantern, emphasising nature’s power over mankind and the fishermen’s fate in particular. The jagged silhouettes on the left are the treacherous rocks called ‘the Needles’ off the Isle of Wight.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/turnerfisherman.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/turnershipwreck.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21">The Shipwreck</h2>
+          <p class="p1">Period: Romanticism
+            Created: 1805
+            
+            Turner had a lifelong passion for the sea. Shipwrecks and other disasters were a popular theme when Turner painted this. They demonstrated the powerful forces of the elements and the fears of those who travelled far from home. We don’t know whether this painting was inspired by an actual shipwreck. Turner demonstrates the trauma and horror of a shipwreck with dramatic realism. These dark colours are common in Turner’s early paintings. They provide a contrast to the white crests of the waves.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnershipwreck.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnerfrosty.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Frosty Morning</h2>
+          <p class="p">Created: 1813
+            Period: Romanticism
+            Genre: History painting
+            
+            This austere winter landscape was one of the most personal of Turner’s exhibited pictures. It records a scene he witnessed while travelling in Yorkshire, and is said to include his eldest daughter, Evelina (in blue), and his ‘crop-eared bay’ horse (pulling the cart). Turner was particularly fond of this painting, which he preferred not to sell. It was also admired by contemporary and later critics. The Spectator saw in it ‘the true tone of nature imitated to perfection’. Years after Turner’s death, Claude Monet saw it and declared it had been painted with ‘wide-open eyes’.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnerfrosty.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnersnowstorm.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Snowstorm: Hannibal Crossing the Alps</h2>
+          <p class="p">Period: Romanticism
+            Created: 1812
+            Genre: History painting
+            
+            The painting depicts the struggle of Hannibal’s soldiers to cross the Maritime Alps in 218 BC, opposed by the forces of nature and local tribes. A curving black storm cloud dominates the sky, poised to descend on the soldiers in the valley below, with an orange-yellow Sun attempting to break through the clouds. A white avalanche cascades down the mountain to the right. Hannibal himself is not clearly depicted, but may be riding the elephant just visible in the distance. The large animal is dwarfed by the storm and the landscape, with the sunlit plains of Italy opening up beyond.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnersnowstorm.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnerdido.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Dido Building Carthage, or The Rise of the Carthaginian Empire</h2>
+          <p class="p">Created: 1815
+            Period: Romanticism
+            Locations: The National Gallery (since 1856), National Portrait Gallery
+            
+            The subject is a classical landscape taken from Virgil’s Aeneid. The figure in blue and white on the left is Dido, directing the builders of the new city of Carthage. The figure in front of her, wearing armour and facing away from the viewer, may be her Trojan lover Aeneas. Some children are playing with a flimsy toy boat in the water, symbolising the growing but fragile naval power of Carthage, while the tomb of her dead husband Sychaeus, on the right side of the painting, on the other bank of the estuary, foreshadows the eventual doom of Carthage.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnerdido.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnernorhamcastle.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Norham Castle Sunrise </h2>
+          <p class="p">Location: Tate Britain, London
+            Period: Romanticism
+            Created: 1845
+            
+            Norham sits on the river Tweed in Northumberland, on the English side of the border with Scotland. Turner first saw Norham castle in 1797, during his first tour of northern Britain. He returned to the ruins in 1801 and 1831, creating work after each visit. Turner made this unfinished canvas late in his career. He uses colour to express the blazing light that merges the building and the landscape. It is one of a group of paintings Turner based on compositions from his ‘Liber Studiorum’ (‘Book of Studies’) (1807–19). This was Turner’s set of 70 engravings he had made from his watercolour compositions.
+            
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnernorhamcastle.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnerSlave-ship.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Slave Ship </h2>
+          <p class="p">Completed: 1840
+            Period: Romanticism
+            Location: Museum of Fine Arts, Boston
+            
+            One of Turner’s most celebrated works, “Slave Ship” is a striking example of the artist’s fascination with violence, both human and elemental. He based the painting on an 18th-century poem that described a slave ship caught in a typhoon and on the true story of the Zong, a British ship whose captain, in 1781, had thrown overboard sick and dying enslaved people so that he could collect insurance money only available for those “lost at sea.” Turner captures the horror of the event and the terrifying grandeur of nature through hot, churning color and light that merge sea and sky. The critic John Ruskin, the first owner of “Slave Ship,” wrote, “If I were reduced to rest Turner’s immortality upon any single work, I should choose this.”
+            
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnerSlave-ship.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnerpeace.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Peace – Burial at Sea</h2>
+          <p class="p">Style: Romanticism
+            Genre: Marina
+            Location: Tate Modern, London, UK
+            
+            Peace shows the burial at sea of Turner’s friend, the artist David Wilkie. The cool palette and saturated blacks create a striking contrast to its pair, War, hung alongside, and convey the calm of Wilkie’s dignified death, compared to Napoleon’s disgrace. The two titles War and Peace are illustrated as abstract concepts, via tone and colour, rather than as actual events. Both works were roundly criticised at the time for their lack of finishing.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnerpeace.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/turnergrandcanal.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Grand Canal – Venice</h2>
+          <p class="p">Style: Romanticism
+            Genre: Cityscape
+            
+            Turner grew from a young art student trained in executing topographical watercolours to the creator of some of the most original landscapes of his time. On his second visit to Venice, probably in September 1833, he created a series of views of the city that betray on the one hand an ardent interest in recording what he saw and, on the other, a Romantic sensibility that suffused his pictures with a sense of the grandeur of nature and of its magnificent light and colour. This picture is based in part on a pencil drawing made during Turner’s first trip to Venice in August 1819 and combines two viewpoints along the Grand Canal. It was shown with four other works in May 1835 at the Royal Academy, where it was well received as one of his “most agreeable works.”
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/turnergrandcanal.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+     <br>   <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./joseph.js"></script>
+ </body>
+</html>

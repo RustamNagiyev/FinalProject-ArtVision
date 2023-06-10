@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="vangogh.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+        <div class="container2">
+            <img class="imgartist" src="./pictures/van.jpg" alt="Resim Açıklaması">
+            <div class="content2 hidden2">
+              <h1 class="hartist">Vincent van Gogh</h1>
+              <p class="partist">Vincent Willem Van Gogh is a Dutch post-impressionist painter. He is one of the most conservative and influential figures in the Western world arts institutions. In a little more than ten arrangements he produced some 2,100 paintings and drawings, including 860 oil paintings, most of which were done in the last two years for the bathroom.(March 30, 1853-29 July 1890)</p>
+            </div>
+            <button class="btn3" onclick="toggleContent2()">(.......)</button>
+          </div>
+        </div>
+
+
+    <div class="container">
+      <img class="img" src="./pictures/vangece.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">Starry Night 1889</h2>
+        <p class="p">Starry Night is one of the most recognized paintings in the world. It has been reproduced onto placemats, cards, posters calendars, jigsaw puzzles etc. In short, EVERYTHING and ANYTHING.
+
+            Van Gogh painted this iconic painting when he was at the mental asylum in Saint-Rémy-de-Provence. Although conditions were poor, Van Gogh’s freedoms were better than most of the other patients. Van Gogh could roam about in the asylum gardens and had an extra room to use as a painting studio.
+            The artist created this painting after a major mental breakdown and felt depressed and suicidal. The swirls in the sky reflect his emotional turbulence. The use of darker colors express his dark mood. The scene of this painting depicts the views of Saint-Rémy-de-Provence that Van Gogh saw from his bedroom window. However, it is a whimsical and emotional interpretation of this view.
+
+This most famous Van Gogh painting is hanging on the walls of the Museum of Modern Art (MoMA) in New York City.
+
+
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/vangece.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" id="imgid" src="./pictures/vancrows.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21">Wheatfields With Crows, 1890</h2>
+          <p class="p1">
+            Van Gogh painted Wheatfields With Crows less than three weeks before his suicide. Today it is hailed as one of his most dramatic paintings.
+            
+            “They are endless wheatfields under a cloudy sky, and I have not hesitated to attempt to express sadness and the deepest loneliness”
+            Vincent van Gogh Quote
+            
+            In the last few months of is life, Van Gogh painted the wheat fields of Auvers-sur-Oise quite a few times. There are a few different versions of the wheat fields, however, this one is the most dramatic.
+            
+            Wheatfields With Crows gives rise to various interpretations. Were the crows a symbol of death? Or a symbol of freedom? Van Gogh paints with intense and hurried brush strokes. Is he indicating that time is running out? He portrays turbulent skies. Is this an expression of his own angst and despair? The paths in this painting lead to nowhere. Does this symbolize Van Gogh’s feeling of belonging nowhere and feeling lost in this world?
+            
+            This powerful and controversial painting is also considered to be Van Gogh’s “suicide note”. It is all speculation of course. However, 17 days after the finishing Wheatfields With Crows, Vincent shot himself in the chest in this very same wheatfield.
+            
+            Wheatfields With Crows is hanging on the walls of the Van Gogh Museum, Amsterdam.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vancrows.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vanalmond.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Almond Blossom 1890</h2>
+          <p class="p">Vincent Van Gogh painted the Almond Blossom painting when he heard the joyful news that his brother Theo and his wife, Jo, just gave birth to a baby boy. They were naming the baby after him.
+
+            Theo wrote in a letter to Vincent the following beautiful words:
+            
+            “As we told you, we’ll name him after you, and I’m making the wish that he may be as determined and as courageous as you”
+            
+            Vincent felt so happy with the news. He decided to paint for them an almond blossom painting as a gift. To Vincent, almond blossoms represented all things good, such as beauty, renewal, optimism and hope. Even painting flowering trees filled Vincent with joy.
+            
+            Unsurprisingly, it was this Almond Blossom painting that had the most sentimental value to the Van Gogh family.
+            Today you can view this beautiful painting at the Van Gogh Museum in Amsterdam.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vanalmond.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vanbedroom.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Bedroom, 1888</h2>
+          <p class="p">The Bedroom is the title of three versions of this scene that Van Gogh painted. These paintings depict Van Gogh’s simple bedroom in the Yellow House in Arles.
+
+            The three different versions are distinguishable from each other by the pictures on the wall to the right.
+            On purpose, Van Gogh decided not to apply the rules of perspective to this scene. He wanted to give this painting a “flattened” look so that it would resemble a Japanese print.
+
+The three paintings of the Bedroom are owned by the following art museums:
+
+Van Gogh Museum, Amsterdam
+Art Institute of Chicago
+Musee D’Orsay, Paris
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vanbedroom.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vanpotato.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Potato Eaters 1885</h2>
+          <p class="p">Van Gogh completed The Potato Eaters in Nuenen in 1885, during his early years as an artist. His aim was to portray a village peasant family in their natural setting, having a meal, rather than posing for the painting. Van Gogh meticulously planned this painting and hoped to exhibit it at the Paris Salon. However, the Salon rejected it and the painting was not successful in Van Gogh’s lifetime.
+
+            Today, this painting is considered by the art world to be one of Van Gogh’s most regarded masterpieces. You can view Potato Eaters at the Amsterdam Van Gogh Museum.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vanpotato.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vancafe.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Cafe Terrace at Night, 1888</h2>
+          <p class="p">Cafe Terrace at Night is one of the first paintings that Van Gogh made when he came to Arles. The café in Arles still exists today and is renamed the Cafe Van Gogh. It is a major tourist attraction for Van Gogh fans.
+
+            This painting is one of the most recognized and quoted artworks. Its popularity rivals with Van Gogh’s iconic Sunflowers and Starry Night paintings.
+            Van Gogh set up his easel outdoors and in the evening hours to paint this scene. This was a practice that he picked up from the impressionists in Paris. However, he did not paint the scene as he observed it but rather used color and brushwork to express his emotions. In this painting, Van Gogh portrays excitement and pleasure.
+
+Interestingly, Van Gogh never signed this painting. However, art historians know that he painted this canvas from numerous letters that he wrote to his family members about this art piece.
+
+Cafe Terrace at Night is hanging on the walls of the Kröller-Muller Museum in the Netherlands.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vancafe.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vansun.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Sunflowers, 1888</h2>
+          <p class="p">Sunflowers is the name of two series of still life paintings that Van Gogh painted. The first series of Sunflowers, Van Gogh painted in Paris in 1887. The second series, he painted in 1888 when living in Arles, Provence.
+            Van Gogh painted the second series of Sunflowers as a welcoming to his friend and fellow impressionism artist Paul Gauguin. He wanted to decorate his guest’s bedroom with these paintings as Gauguin was joining Van Gogh in Arles so that they could paint together. Indeed they spent some prolific weeks painting together.
+
+In these paintings, Van Gogh uses beautiful vivid colors and thick paint to add dimension and texture.
+Van Gogh’s beautiful Sunflower paintings are on view at the following art museums around the world:
+
+The National Gallery, London
+Van Gogh Museum Amsterdam
+Kroller Museum, The Netherlands
+Metropolitan Museum of Art, New York
+Neue Pinakothek, Munich
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vansun.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vandrpaul.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Portrait of Dr. Gachet, 1890</h2>
+          <p class="p">When Van Gogh left the asylum in Saint-Rémy-de-Provence, his brother, Theo, organised for Vincent to move to Auvers-sur-Oise, to live in the house of a doctor and homeopath, Dr. Paul Gachet. Camille Pissarro recommended this doctor to Theo, stating that this doctor had a particular interest in treating artists.
+
+            Van Gogh made three portraits of Dr. Gachet, an etching (May 1890) and two paintings (June 1890). One copy he gave to Dr. Gachet as a gift. The most famous portrait depicts the doctor sitting at a table and leaning his head on his right hand. Dr. Gachet’s face portrays a heart-broken man.
+            
+            Van Gogh thought Dr. Gatchet was as crazy as him. In a letter to Theo, Vincent writes ” he certainly seems to be suffering as seriously as I”.
+            
+            In 1890, one of the portraits of Gachet sold for a staggering price of $82.5 million dollars at an auction in New York.
+            
+            Today, one portrait of Dr. Gachet is on display in the Musee D’Orsay in Paris. The second painting belongs to a private art collector.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vandrpaul.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/vanirises.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Irises, 1889</h2>
+          <p class="p">While Van Gogh was staying in the asylum in in Saint-Rémy-de-Provence, he was permitted to spend time in the gardens. He painted many paintings of the hospital gardens, the Iris paintings included.
+
+            He sent his Iris paintings to his brother Theo who quickly submitted them into the annual exhibition of the Société des Artistes Indépendants in September 1889, together with another Van Gogh painting Starry Night Over the Rhone.
+            
+            In 1987 (nearly 100 years later), Sotheby sold this painting for an incredible $53.9 million dollars. This was the highest price ever paid for a painting. On March 21, 1990, The J. Paul Getty Museum purchased the painting at an undisclosed sum. Art experts believe that the museum paid somewhere between $50-70 million dollars.
+            
+            Today, you can view the Irises painting at The J. Paul Getty Museum in Los Angeles.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/vanirises.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+     <br>   <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./vangogh.js"></script>
+ </body>
+</html>

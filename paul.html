@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="paul.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/paulcezanne.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Paul Cézanne</h1>
+          <p class="partist">Paul Cézanne, French post-impressionist painter and traveller. Due to his contributions and influence to the development of modern art, he has often been called the father of modern art. He created a bridge between Impressionism and Cubism.(19.01.1839-22.10.1906)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/paullargebathers.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">The Large Bathers</h2>
+        <p class="p1">Considered by many to be the absolute masterpiece of this artist.The subject and the technique used is completely different from the standard of works that the painter has made in his artistic career.
+
+            The artist wanted to create an art that would last forever; the Cezanne bathers represents a manifesto for all those who wanted to represent a "non-commercial and counter-trend" art. The women protagonists are painted with a strong thickness and fit geometrically perfectly to the whole context; The bathers represent a tribute that Cézanne decides to pay to the great masters of the past, such as Titian and Rubens.
+            
+            The strong brightness that the whole painting is due to the color that was placed several times on the canvas, which allowed Cézanne to obtain the necessary light to achieve the final effect; The strong black lines that delimit the contours of the Cezanne bathers, making them look like real statues, rather than painted. The message that Cézanne launched was immediately taken into consideration by other great names in the art world, in particular Picasso, who in the same period and also with a very similar technique gave life to his masterpiece entitled "Les Demoiselles d'Avignon".
+            
+            The artistic creation was obtained in 1937 for $110,000 for the Philadelphia Museum of Art by their significant sponsor, Joseph E. Widener. Cézanne worked on this composition for a long time, and it stayed incomplete even at the hour of his passing in 1906.
+            Artist: Paul Cézanne
+
+            Year: 1898–1905
+            
+            Medium: Oil-on-canvas
+            
+            Dimensions: 210.5 cm × 250.8 cm (​82 7⁄8 in × ​98 3⁄4 in)
+            
+            Location: Philadelphia Museum of Art, Philadelphia, United States 
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/paullargebathers.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/paulbasketofapples.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">The Basket of Apples Still life</h2>
+          <p class="p">Taking a first look at The Basket of Apples, one might have a strange feeling of precarious balance; there are various parts with different balances, but when added together they conclude in a completely balanced composition.
+
+            In the central part of the painting, there is an inclined bottle and on its left there is a basket that is overturned in the opposite direction concerning the inclination of the bottle, giving a feeling of disorientation. To the right of the bottle, there is a plate with cookies, which matches the same direction as the right side of the table
+            
+            The right side of the painting has nothing to do with the left one, since they're not matching each other, just as if the image were reflecting two different points of view at the same time.
+            
+            All these details are not mistakes made by Cézanne, but an interesting experiment in perspective that succeeded perfectly, subsequently leading to a fundamental point in the transition from Impressionism to Cubism.
+            
+             
+            
+            Artist: Paul Cézanne
+            
+            Year: 1895
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 65 cm × 80 cm (25.6 in × 31.5 in)
+            
+            Location: Art Institute of Chicago, Chicago
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulbasketofapples.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paulcards.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> The Card Players</h2>
+          <p class="p">The two players engaged in the card game are isolated from the other customers of the club. The two men are perhaps farmers and one of them was probably named Alexandre, the gardener on the estate of the artist's father in Jas de Bouffan. They are seated at a simple wooden table on which a bottle of wine closed by a cork is placed. Card Players wear simple but dignified clothing. The man on the left is wearing a jacket and a hat. While carefully evaluating his cards he smokes a pipe. The player on the right seems younger and dresses more casually. Around them, you can see the"boiserie" of the room that is the decoration of the wooden walls and the glass of a door.
+
+            The painted coffee table in a central position has the task of building the three-dimensional space through the overlapping perspective that creates the right articulation of the figures of the players interacting through the table. In constructing the space, the luminous relations of figure-ground contrast must also be taken into consideration.
+            
+            Artist: Paul Cézanne
+            
+            Year: 1890–1895
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 1′ 11″ x 1′ 7″
+            
+            Location: Musée d'Orsay station 
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulcards.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paultheboyinaredwest.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The boy in a Red Vest</h2>
+          <p class="p">A boy is portrayed in the center of the painting. He is seated at a table and facing right. His torso is curved and wearily supported by his left arm. The boy's head rests on the hand that supports his cheek. He wears simple clothes and a white shirt with a red fabric waistcoat on the front and ocher color on the back. Bring a pair of blue pants. On the left, the dark interior of the room. The front wall is lighter and on it, you can see the detail of a painting.
+
+            The brush strokes are thick and irregularly arranged. In some places, you can see the intervention of spatula strokes that stretch the color with clean cuts. The boy's body seems assembled with simple and geometric shapes. Cézanne elaborated on a formal simplification to return nature to the simple forms of the cone of the cylinder and the sphere.
+            
+            Artist: Paul Cézanne
+            
+            Year: 1889 or 1890
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 80 cm × 64.5 cm (31.5 in × 25.4 in)
+            
+            Location: Foundation E.G. Bührle
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paultheboyinaredwest.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paulbather.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Bather</h2>
+          <p class="p">The protagonist is a teenager, who is wearing only a small white costume, is standing in the center of the work; takes a step forward with the left foot supporting the body. The boy is of medium height and his legs with big feet. His face is bent towards the ground and his position is frontal. His hair is short and dark and creates a fringe on the forehead.
+
+            The trunk has a fine musculature while the legs are massive. Hands are resting on the hips. The left shoulder is slightly lower than the right. The land is devoid of vegetation and looks like a sandy beach. On the right, there is a puddle with little water. Finally, in the background opens a landscape devoid of details and blurred.
+            
+            The sky occupies about the upper half of the canvas while the lower one is reserved for the landscape. The figure of the man joins the two horizontal halves of the painting. The figure of the teenager is summarized and the arrangement of the limbs reveals attention to geometric composition. The bent arms form two triangles thanks to the position of the hands-on-hips.
+            
+            Artist: Paul Cézanne
+            
+            Year: 1885
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 4′ 2″ x 3′ 2″
+            
+            Location: The Museum of Modern Art
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulbather.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paulmodernolympia.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">A Modern Olympia</h2>
+          <p class="p">Cezanne painted two, different from each other. In 1870, he painted the first in response to a painting by Eduard Manet on the same theme and which was made in 1863, then exhibited in 1865 at the Paris Salon, where it caused a certain scandal. Later, he decided to paint another modern Olympia, using the same oil technique but developing a completely different painting.
+
+            The work "A modern Olympia" was created between 1873 and 1874; the artist, after a stay in Auvers-Sur-Oise, decided to paint a more erotic version of modern Olympia, and he used brighter colors and more dynamic design.
+            
+            The movement, aroused by the black maid that undresses Olympia while a spectator observes her developing another curious movement that ends with the curtain on the left.
+            
+            Artist: Paul Cézanne
+            
+            Year: 1874
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 46 x 55.5 cm
+            
+            Location: Musée d'Orsay
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulmodernolympia.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paulchateaunoir.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Château Noir</h2>
+          <p class="p">In Château Noir, Cézanne broke away from naturalism in a completely new way. While the Impressionists were primarily aimed at representing the world as they saw it, Cezanne didn't care.
+
+            It is impossible to determine the spatial relationship between the castle and the trees, there is a flattened effect, where these two elements appear to be directly on top of each other. The mountain is clearly in the background, but it's hard to tell how far it is. These details simply weren't important to Cézanne, who cared more about depicting deeper truths than simply reproducing what he saw in front of him.
+            
+            Artist: Paul Cézanne
+            
+            Year: 1903–1904
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 2′ 5″ x 3′ 1″
+            
+            Location: National Gallery of Art
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulchateaunoir.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paulmontsaintevictoire.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Mont Sainte-Victoire seen from Bellevue</h2>
+          <p class="p">Many trees and bushes partially cover the village. Small houses with sloping roofs can be glimpsed. On the horizon rises the spur of the mountain facing right.
+
+            Paul Cézanne was not interested in impressionist atmospheres. He was a protagonist of post-impressionism. He undertook to recover the form through a search for progressive simplification of the figure. In "La Montagna Sainte-Victoire" and in the other paintings of the series, the successive simplifications are visible. In this painting, the volumes are broken down and appear as chromatic pieces that, placed alongside, build the image. As well as brushes, Cézanne also used spatulas to create sharper and more geometric backgrounds of color.
+            
+            Artist: Paul Cézanne
+            
+            Year: 1892–1895
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 2′ 5″ x 3′ 0″
+            
+            Location: Barnes Foundation 
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulmontsaintevictoire.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/paulpyramidofskulls.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Pyramid of Skulls</h2>
+          <p class="p">Depict four human skulls in a pyramid configuration. Painted in a pale light against a dark background; in no other painting has Cézanne placed his objects so close to the viewer.
+
+            These skulls are piled one above the other and one behind the other, on a desk, a piece of paper taken at random under the two lower skulls, which are themselves precariously perched on the edge of the desk, facing one another. The background is mostly dark, but with hints of a richly decorated red and black carpet.
+            
+             
+            
+            Artist: Paul Cézanne
+            
+            Year: 1901
+            
+            Medium: Oil on canvas
+            
+            Dimensions: 14.5 in × 17.9 cm
+            
+            Location: Private collection
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/paulpyramidofskulls.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+      <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./paul.js"></script>
+ </body>
+</html>

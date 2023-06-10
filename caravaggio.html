@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="caravaggio.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div>
+            <h1>Art Vision</h1>
+            <button class="menu-btn">
+              <span class="menu-icon"></span>
+            </button>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+              <li><a href="./support.html">Support</a></li>
+              <li><a href="#" id="login-btn">Login</a></li>
+              <li><a href="#" id="register-btn">Register</a></li>
+              <li><a href="./fav.html">Favorite</a></li>
+              <li><a href="#" id="search-btn">Search</a></li>
+            </ul>
+            <div class="search-container">
+              <form>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <div id="login-overlay" class="overlay">
+        <div class="overlay-content">
+          <span class="close-btn">&times;</span>
+          <h2>Login</h2>
+          <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+      
+      <div id="register-overlay" class="overlay">
+        <div class="overlay-content">
+          <span class="close-btn">&times;</span>
+          <h2>Register</h2>
+          <form id="register-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="password-confirm">Confirm Password</label>
+            <input type="password" id="password-confirm" name="password-confirm">
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Bild-Ottavio_Leoni,_Caravaggio.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Caravaggio</h1>
+          <p class="partist">Michelangelo Merisi da Caravaggio is an Italian painter. He has worked in Rome, Naples, Malta and Sicily. He is the first great artist of the Baroque art movement. Caravaggio was named after the town where he was born. "Michelangelo Merisi Caravaggio" is her real name. (September 29, 1571-18 July 1610)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/caravaggiojudith.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">Judith Beheading Holofernes</h2>
+        <p class="p">This painting depicts the biblical passage from the Book of Judith where Judith gets the Assyrian general Holofernes drunk and then cuts his head off. Caravaggio decided to paint the most impactful moment: when Judith is severing the head.
+
+            Look closely at the expressions in the scene and you get a much deeper feeling for the psychology of this painting. Aside from the obvious surprise and agony of Holofernes, Judith’s expression is full of disgust, struggle, and uncertainty. Her helper looks on intensely too, albeit away from the scene. Perhaps she is keeping an eye out in case someone discovers the gruesome scene.
+            
+            According to Andrea Pomella, this is the first painting in a series of works where Caravaggio explores the tragic meaning of life. The striking realism and expression on the faces convey the anxiety of the painter.
+            
+            Author John L. Varriano explains this is also the first painting where Caravaggio starts using incisions in the materials to carve contours, which reinforces the contrast between light and dark in his tenebrism style.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/caravaggiojudith.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/caravaggiosupper.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21"> Supper At Emmaus</h2>
+          <p class="p1">The Gospel of St. Luke inspired this scene, which depicts the moment when, after his resurrection, Jesus appears to his disciples in the town of Emmaus.
+
+            According to Larry Keith, this is one of Caravaggio’s most highly touched-up paintings and required a great amount of planning and preparation. Overall, we can see a more sophisticated development of his artistic skills.
+            
+            If we compare this painting to the same version of the Supper at Emmaus in Milan, we notice that the London version uses light and contour more softly. There’s more colour, which helps create dynamism in the scene.
+            
+            The more elaborate composition creates drama, instead of the stark tenebrism of the Milan version. According to Giulio Bora, this is because, in the London version, he borrows from the mannerism techniques we can see in Michelangelo or Raphael.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggiosupper.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/caravaggiochrist.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> The Taking Of Christ</h2>
+          <p class="p">According to Andrea Pomella, the dramatism of this scene shines through the entangling of the bodies in the painting. Even though there is no clear setting or background to this scene, the figures alone and the drama created are sufficient. This is the key moment when Judas betrays Christ in the garden.
+
+            The figures, from left to right, are John, Jesus, Judas (who has just kissed Christ), and three Roman soldiers. Finally, there’s a man holding a lantern, which is the point of light that Caravaggio uses for his tenebrism technique in this scene.
+            
+            This painting was believed to be lost for about 200 years. At the end of the 17th century, it was accidentally attributed to one of Caravaggio’s Dutch followers. This happened during the inventorying of a large art collection that hosted this painting, so its origin was confused.
+            
+            Thankfully for us, the senior conservator of the National Gallery of Ireland, Sergio Benedetti, found it amongst the collection of some Jesuit priests in Dublin in the 90s and expertly identified it as an authentic Caravaggio.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggiochrist.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/caravaggioamor.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Amor Vincit Omnia</h2>
+          <p class="p">The theme of the painting is clear: love conquers all. Here we see Cupid trampling over items related to reason, science, and war. This is, in fact, a fairly common subject of the time, but Caravaggio’s twist turned it into an instant classic.
+
+            We know that Caravaggio worked with a model for this painting. The realism showcased here is almost photographic. In fact, there is a clear element of sculptural work in the creation of this piece and its structure, according to Bradford Kelleher. Also, David Stone notes that this is a clear example of Caravaggio’s irreverence towards classicism.
+            
+            If we look at this Cupid, he is charming but far from the beautiful god of ancient history. He has crooked teeth and appears incredibly childish, which is very far removed from the angelic and platonic Cupid of the Renaissance and Ancient Rome.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggioamor.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/caravaggiobacchus.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Bacchus</h2>
+          <p class="p">Although depictions of the classical gods were popular during the 1500s and 1600s, this painting of Bacchus is not conventional. According to Witting, Caravaggio painted the god as an androgynous figure. Bacchus’ gesture and posture actively engage with the viewer by offering them a cup and inviting them to rejoice in terrestrial pleasures.
+
+            In this painting, state Kelleher and Gregory, we can see better than anywhere else in Caravaggio’s portfolio the impact of the Cinquecento influences from artists in Brescia, Italy. They explain that the tri-dimensionality and illusion effects we see here are direct borrowings from painters such as Moretto and Salvodo.
+            
+            Art historian Ann Sutherland Harris says this is the most polished of all the half-length paintings of young men that Caravaggio produced early in his career. She also points out that this is one of the few paintings that was never copied.
+            
+            Harris proposes that the deviation from the traditional depiction of Bacchus may perhaps suggest that Caravaggio didn’t intend to paint the god himself, but rather someone dressed up as him.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggiobacchus.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/caravaggionarcissus.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Narcissus </h2>
+          <p class="p">This is another painting by Caravaggio, according to Mary Ann Mattoon, that transforms art and the way we see the story of Narcissus. The trick is all in the water. Caravaggio uses his mastery of light and shadow, along with his realism of movement and form, to create two parallel images of narcissus.
+
+            One stands in the light, which is the Narcissus that contemplates his reflection. The other is in the darkness of the water that will bring his doom.
+            
+            In other paintings, Mattoon says water was traditionally used as a direct mirror or a calming effect. Here, however, Caravaggio achieves troublesome anguish that drives the narrative. Due to the composition of this painting, we also get a general sense of fragility and a lack of stability.
+            
+            You might also see that the centre of gravity is off balance. So, if you view this painting in person and feel a little dizzy, lightheaded, or slightly off, don’t worry. This is normal. Just take a moment to sit down—you’ve fallen victim to Caravaggio’s mastery of perception and drama.
+            
+            According to John Varriano, these mythological topics, particularly those where there’s one single figure, give us a glimpse into Caravaggio’s mind. He argues that although the motives may be borrowed from myth, pieces such as Narcissus also have a sense of self-expression. Arguably, one could read that this is a moment of acknowledgment from Caravaggio to himself, realising his own troubled life and the darkness that surrounded him.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggionarcissus.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img changeimg" src="./pictures/caravaggiocardsharps.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Cardsharps</h2>
+          <p class="p">If there’s a painting that represents the actual life that Caravaggio lived beyond his paintings, it’s this one. The picaresque that exudes throughout his life story comes across here, as he paints these people playing cards. It’s two people playing tricks on the other naïve person in the painting.
+
+            According to Sybille Ebert-Schifferer, Caravaggio knew the literary fashions of the time. And as often happens, one art method borrows from another. Aware of the successful picaresque novels from Spain with ruffians, tricksters, and ordinary people as their protagonists, he would have thought these characters perfect for his paintings. According to Ann Sutherland Harris, if we look closely, we notice that the characters in this painting are similar to those in The Calling of St. Matthew.
+            
+            Also, we know that Caravaggio liked gambling. In fact, it’s likely that many of his fights happened because of games, debts, and egos hurt in the process. Pieces like this one acted as social windows and commentaries on the world around people like Caravaggio and his contemporaries. They are accounts of people who don’t often get an abundant historical record and they help us understand periods of history in a more holistic way.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggiocardsharps.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/caravaggiomatthew.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> The Calling Of St. Matthew</h2>
+          <p class="p">This painting is interesting because, according to Juliet Benner, it is full of spiritual power. The huge size of this painting in its current location (which is a relatively small chapel) means the message is impossible to miss. The pointing hand of Jesus to the tax collector Levi, who will later become Matthew, is a clear and commanding invitation to join Christ.
+
+            Marjorie Cohee Manifold explains that, if you notice the window on the upper area of the painting and follow the light to the pointing hand, this helps understand the story. Benner notes that the darkness of the room symbolizes Levi/Matthew’s soul, while the piercing light is the clear road to salvation.
+            
+            This painting, Pomella states, was Caravaggio’s first prominent commission in the city of Rome. And it caused quite a commotion in Rome at the time explains Witting. This is easy to see when we consider that this painting was originally an altarpiece.
+            
+            If you take a closer look, the five characters were actually gambling. Then, as Jesus comes to announce his mission, the scene breaks up. This would have looked rather out of place in a church despite the topic of conversion.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggiomatthew.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/caravaggiomedusa.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Medusa</h2>
+          <p class="p">Here, Caravaggio painted the very moment when Perseus cut off Medusa’s head. Unless you see this Medusa in the flesh, her gaze gets lost in translation says Mieke Bal. In this digital version, Medusa seems to be looking away, terrified by her fate.
+
+            However, on the convex surface of the shield that it was originally painted on, it becomes harder for us to know exactly where she’s looking or why. Bal explains that Caravaggio experimented with the concept of spatiality, often confusing and baffling his audience.
+            
+            Unfortunately, this is one of the many issues we have with decontextualized art. Either way, the expression of absolute shock is as realistic as it gets, as is the perfect depiction of the snakes in Medusa’s head.
+            
+            By now you’ve also seen a recurring theme of beheading in Caravaggio’s paintings. As historian Thomas Puttfarken explains, this is a reflection of his internal struggle and violence, which he develops through these scenes. They show torture and martyrdom in a very baroque and Christian dual nature, much like his life.
+            
+            Finally, this piece is also important because of Caravaggio’s patron. It was the second artwork that Cardinal Francesco Del Monte commissioned from him. In fact, it is thanks to the patronage of this cardinal, diplomat, and art collector, that Caravaggio found his place as a stable artist despite his run-ins with the law. Without the help of people such as Del Monte, Caravaggio may have struggled to keep up his momentum.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/caravaggiomedusa.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./caravaggio.js"></script>
+ </body>
+</html>

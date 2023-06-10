@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="edouard.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Édouard_Manet,_en_buste,_de_face_-_Nadar.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Edouard Manet</h1>
+          <p class="partist">Édouard Manet, French painter. He is one of the first painters who started to paint pictures about modern life in the 19th century. Manet played an important role in the transition from realism to impressionism. Lunch on the Country and Olympia, his early masterpieces, inspired painters younger than him.(23.01.1832-30.04.1883)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/edouardmusic.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">Music in the Tuileries (1862)</h2>
+        <p class="p1">Manet’s painting ‘Music in the Tuileries’ from 1862 is seen by many as a declaration of the artist’s desire to paint modern life.
+            His radical style, showcased in this piece, is considered to be one of the earliest examples of modernist painting.Around the time that he was working on the piece, Manet was corresponding frequently with poet and art critic Charles Baudelaire. In 1859, Baudelaire completed an essay titled ‘The Painter of Modern Life’, which was published in 1863. He said that he wanted to see art that displayed the “gait, glance, and gesture” of modernity.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/edouardmusic.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/edouard_Manet_-_Le_Déjeuner_sur_l'herbe.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21"> Déjeuner sur l'Herbe (1863)</h2>
+          <p class="p1">Painted in 1863, ‘Déjeuner sur l’Herbe’ is the piece that established Manet as the most controversial painter of his time.
+            At first glance, ‘Déjeuner sur l’Herbe’ is a clear example of realism, the movement that tried to produce realistic (and not idealised) depictions of scenes championed by Gustave Courbet.However, on closer inspection the realism in the work melts away.
+
+            The foliage is hazy and formless, the setting looks as though it could be a stage background. There is something wrong with the perspective (the woman in the background is far too large).
+            
+            Similarly, the figures are posed in a manner that copies an etching by Rainmondi, after Raphael’s ‘The Judgement of Paris’, suggesting that the painting was conceived and created in the studio.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouard_Manet_-_Le_Déjeuner_sur_l'herbe.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardolympia.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Olympia (1863-5)</h2>
+          <p class="p1">Much like Déjeuner sur l’Herbe, Manet’s Olympia is a powerful statement that contradicts the firmly held conventions of 19th century art.
+            This painting of a female nude was scandalously modern to its contemporary viewers. This was particularly so because the painting has many pointers towards Olympia being a prostitute (read more on our Olympia page).
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardolympia.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardexecutionofmaximilian.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Execution of Maximilian (1867-8)</h2>
+          <p class="p">Depicting the execution of Austrian archduke Maximilian, the Emperor of Mexico, Manet’s painting from 1867-68 was one of three works he painted to mark the event.
+            It is likely that he started working on the painting around the time that news of the execution reached Paris in July 1867. And Manet worked on a grand scale: the finished work measures 193 × 284 cm.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardexecutionofmaximilian.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardmaskedball.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Masked Ball at the Opera (1873)</h2>
+          <p class="p">Unlike many of the other Impressionist artists, Manet was born into influence and wealth.
+            ‘Masked Ball at the Opera’ (1873) is an elegant example of the fashionable circles the artist moved in.
+            The masked ball depicted in this painting was an annual event during Lent. Much like ‘Music in the Tuileries’, Manet made several sketches for this painting and completed the work in his studio. Many of the figures he depicted are his friends who posed for the piece, including writers, musicians and fellow artists.
+            
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardmaskedball.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardberthe-morisot-1841-95-reclining-1873-oil-on-canvas-edouard-manet.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Berthe Morisot Reclining (1873)</h2>
+          <p class="p">This portrait from 1873 is a captivating example of Manet’s ability to capture likenesses, despite using his customary truncated and flattened painting style.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardberthe-morisot-1841-95-reclining-1873-oil-on-canvas-edouard-manet.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardrailway.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Railway (1874)</h2>
+          <p class="p">Accepted to the Paris Salon of 1874, ‘The Railway’ was critiqued for its unfinished appearance.
+            The other major area of dissatisfaction was the painting’s title: the railway mentioned is not visible in the work, just a cloud of smoke from a steam engine and fragments of a railway station.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardrailway.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardnana.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Nana (1877)</h2>
+          <p class="p">Once again, Manet chose the modern prostitute as the subject for his 1877 painting titled ‘Nana’.
+            Inspired by Emile Zola’s novel ‘L’Assommoir’, the figure of Nana is drawn as a “grand cocotte” or “glittering courtesan”, fashionably dressed and assuming the mannerisms of the upper and middles classes.The sexuality of the subject is overt, with the figure clad in a corset, looking out towards the viewer with a slight smile on her lips. A partially cropped figure to her right, who stares at her whilst she stares at the viewer, reveals himself to be her client.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardnana.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/edouardspring.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Le Printemps (Spring) (1882)</h2>
+          <p class="p">When Le Printemps was exhibited at the Salon of 1882, Maurice de Seigneur described the reception:
+
+            “Manet’s defenders are delirious, his detractors stupefied”.Painted in profile, echoing early Renaissance portraits of gentile women, Springtime sees Manet depict his model in floral prints and surrounded by blossoms.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/edouardspring.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./edouard.js"></script>
+ </body>
+</html>

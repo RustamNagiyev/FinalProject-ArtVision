@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="goya.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/goya_vicente_lopez.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Francisco Goya</h1>
+          <p class="partist">Francisco José de Goya y Lucientes is a Spanish painter and engraver, one of the leading figures of the Romanticism movement. The works of Goya, who worked as a court painter of the Spanish reign, are thought to be important documents giving information about the period in which he lived.(30.03.1746-16.04.1828)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/goyathethird.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">The Third of May 1808</h2>
+        <p class="p">The Third of May 1808 is a painting by Francisco Goya that was created in 1814 and is presently housed in Madrid’s Museo del Prado. Goya hoped to remember Spanish resistance to Napoleon’s forces during the Peninsular War occupation in 1808.
+
+            It was commissioned by the provisional government of Spain, along with its companion work of the same scale, The Second of May 1808 (or The Charge of the Mamelukes), at Goya’s recommendation.
+            
+            The painting’s substance, presentation, and emotional power establish it as a pioneering, archetypal representation of war’s horrors. Despite drawing on various influences from both high and popular art, The Third of May 1808 deviates from tradition.
+            
+            It has no clear antecedent, deviating from Christian art traditions and typical images of conflict, and is regarded as one of the earliest paintings of the modern period.
+            
+            The Third of May 1808 influenced a number of great paintings, including a series by Édouard Manet and Pablo Picasso’s Massacre in Korea and Guernica.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/goyathethird.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/dunyanin-en-unlu-tablolari-listelist-saturno-devorando-a-un-hijo-cocuklarini-yiyen-saturn-francisco-goya-saturn-tablosu-1.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21">Saturn Devouring His Son</h2>
+          <p class="p1">According to the conventional interpretation, Saturn Devouring His Son illustrates the Greek tale of the Titan Cronus (in the title Romanized to Saturn), who, fearful that one of his offspring might overthrow him, ate each of his children upon their birth.
+
+            The piece is one of 14 Black Paintings that Goya painted directly on the walls of his dwelling between 1819 and 1823. After Goya’s death, it was converted to canvas and is now housed at Madrid’s Museo del Prado.
+            
+            Goya was perhaps influenced by Peter Paul Rubens’ 1636 painting of the same title. Rubens’ picture, which is also housed at the Museo del Prado, is a lighter, more traditional interpretation of the narrative, with less of the cannibalistic savagery seen in Goya’s portrayal.
+            
+            Some critics argue that Rubens’ depiction of the deity is the more horrific: the god is shown as a cunning, remorseless murderer who kills his innocent kid out of fear for his own position of power. In contrast, Goya’s image depicts a dad driven insane by the act of murdering his own kid.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/dunyanin-en-unlu-tablolari-listelist-saturno-devorando-a-un-hijo-cocuklarini-yiyen-saturn-francisco-goya-saturn-tablosu-1.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyalamaja.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21"> La Maja desnuda</h2>
+          <p class="p1">The Nude Maja (La maja desnuda) depicts a naked lady lying on a bed of pillows and was most likely commissioned by Manuel de Godoy to display in his private collection in a cabinet dedicated to nude paintings.Goya also produced a pendant of the same figure, but dressed, known now as La maja vestida (The Clothed Maja), which is generally displayed next to La maja desnuda at the Prado. The figure in La maja vestida is recognized as a maja based on her attire.
+
+            The picture is well-known for the model’s direct and unapologetically directed glance towards the observer. Goya’s work not only enraged the church authorities, but it also titillated the populace and broadened the aesthetic range of the time. It has been housed at Madrid’s Museo del Prado since 1901.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyalamaja.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyathesecond.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Second of May 1808</h2>
+          <p class="p">The Second of May 1808, by Goya, commonly known as The Charge of the Mamelukes, is a companion piece to The Third of May 1808, and is set in the Calle de Alcalá near Puerta del Sol in Madrid during the Dos de Mayo Uprising.
+
+            It represents one of the numerous popular uprisings against France’s conquest of Spain that ignited the Peninsular War.
+            
+            Both paintings were painted in 1814 in a two-month period. They are now on exhibit in Madrid’s Museo del Prado.
+            
+            Goya experienced the French conquest of Spain firsthand in 1808, when Napoleon used the pretense of replenishing his troops in Portugal to capture the Spanish monarchy, leaving his brother Joseph in authority.
+            
+            Attempts to detain members of the Spanish royal family in Madrid sparked a major uprising. This popular insurrection took place between the second and third of May 1808, and was put down by soldiers led by Maréchal Joachim Murat.
+            
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyathesecond.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyacharles.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Charles IV of Spain and His Family</h2>
+          <p class="p">Francisco Goya created the oil-on-canvas painting Charles IV of Spain and His Family. He started work on the picture in 1800, soon after becoming the royal family’s First Chamber Painter, and finished it in the summer of 1801.The painting depicts Charles IV of Spain and his family in life-size, opulent clothing and jewels. Charles IV and his wife, Maria Luisa of Parma, are prominently shown in the artwork, accompanied by their children and relations.
+
+            The family is dressed to the nines in the latest fashion and is lavishly decked with jewels and order of Charles III sashes.
+            
+            The painting was inspired by Louis-Michel van Loo’s 1743 Portrait of Felipe V and his Family and Velázquez’s Las Meninas, with the royal subjects posing for the artist, who is seen at his easel to the left of the panel.
+            The artist is portrayed working on a canvas, like in Las Meninas, but only the back is visible.
+            
+            The group portrait was finished the year after Goya was appointed first court painter, the highest post attainable to a Spanish artist and previously held by Diego Velázquez.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyacharles.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyacolossus.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Colossus</h2>
+          <p class="p">The Colossus (also known as The Giant) is a painting typically credited to Francisco de Goya that depicts a giant in the middle of the canvas striding towards the left hand side of the image. It is known in Spanish as El Coloso and also El Gigante (The Giant).
+
+            Mountains hide his legs up to his thighs, and clouds envelop his torso; the giant looks to be taking an aggressive stance, with one of his fists raised to shoulder height. The bottom third of the artwork is taken up by a gloomy valley filled with humans and herds of livestock escaping in all directions.
+            
+            In 1812, Goya’s son, Javier Goya, acquired the picture. Pedro Fernández Durán eventually acquired the artwork and gave it to Madrid’s Museo del Prado, where it has been since 1931.Since it’s inclusion into the Prado’s collection there has been much debate as to the attribution of the painting to Goya. It has been thought to be the work of Goya’s friend and associate, painter Asensio Juliá.
+
+            However, following decades of study, scientific analysis and lobbying by various academics it was officially accepted as a Goya painting in 2021 by the Prado museum.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyacolossus.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyawitches1.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Witches’ Sabbath (The Great He-Goat)</h2>
+          <p class="p1">The titles Witches’ Sabbath and The Great He-Goat (Spanish: Aquelarre or El gran cabrón) were given to an oil mural that was painted between 1821 and 1823.
+
+            It delves on issues such as violence, intimidation, aging, and death. In moonlight shadow, Satan hulks in the guise of a goat over a coven of fearful witches. Goya was 75 years old at the time, living alone, and suffering from severe mental and physical agony.It is one of fourteen Black Paintings that Goya painted in oil to the plaster walls of his home, Quinta del Sordo. The paintings were produced in secret: he did not label any of them or leave any documentation of his intentions in producing them.
+
+            The plaster paintings were removed and placed on canvas supports about 1874, some fifty years after his death. Before transfer, Witches’ Sabbath was significantly larger — it was the largest of the Black Paintings. Approximately 140 cm (55 in) of the picture was cut from the right side during the transfer.
+            
+            Its frame is extremely tightly cropped at its reduced proportions of 141 436 cm (56 172 in), which some commentators say contributes to its haunting, ghostly aspect, while others believe it distorts Goya’s intentions by changing the point of balance and decreasing the painting’s effect.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyawitches1.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyalosdisparates.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21"> Los Disparates</h2>
+          <p class="p1">Los Disparates (The Follies), also known as Proverbios (Proverbs) or Sueos (Dreams), is a series of etching and aquatint prints made between 1815 and 1823, including retouching in drypoint and engraving.
+
+            Goya developed the series while living at his residence near Manzanares (Quinta del Sordo), where he painted the renowned Black Paintings on the walls. When he returned to France and settled in Bordeaux in 1824, he reportedly left his works in Madrid unfinished.
+            
+            The series was not published during Goya’s lifetime because to the repressive political situation and the Inquisition.
+            
+            The Royal Academy of Fine Arts of San Fernando initially released the Disparates series in 1864 under the title Proverbios (Proverbs).The names of the pieces in this volume are Spanish proverbs. The series is an enigmatic book of twenty-two prints (originally eighteen; four pieces were added afterwards) that represents Goya’s last significant series of prints made during his final years.
+
+            The difficult-to-explain Disparates sequences feature gloomy, dream-like scenarios that experts have linked to political difficulties, ancient proverbs, and the Spanish carnival.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyalosdisparates.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/goyasleep.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Sleep of Reason Produces Monsters </h2>
+          <p class="p">The Sleep of Reason Produces Monsters (Spanish: El sueo de la razón produce monstruos) is an aquatint made between 1797 and 1799 for the Diario de Madrid. It is the 43rd of the 80 aquatints that comprise the satirical Los Caprichos series.
+
+            Los Caprichos is a series of 80 etchings released in 1799 in which Goya denounced the period’s widespread political, social, and religious injustices. Goya largely used the popular method of caricature in these series of etchings, which he embellished with aesthetic creativity.
+            
+            Goya’s use of the newly established technique of aquatint (i.e., etching a printing plate to replicate tones comparable to watercolor washes) offered Los Caprichos prominent tonal effects and energetic contrast that distinguished them as a landmark accomplishment in the history of engraving.
+            
+            Many observers think that Goya wanted to show himself sleeping amongst his sketching utensils, his reason dimmed by slumber, bedeviled by monsters that roam in the dark in aquatint number 43, “The Sleep of Reason Produces Monsters.”
+            
+            Such animals as those shown in this picture are often connected with mystery and evil in Spanish folklore; the owls around Goya may represent foolishness, while the swarming bats may represent ignorance.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/goyasleep.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+        <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./goya.js"></script>
+ </body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="raffaello.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Raffaello_Sanzio.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Raffaello Sanzio</h1>
+          <p class="partist">Raffaello Sanzio da Urbino, known simply as Raphael, was an Italian painter and architect of the Renaissance period. His work is appreciated for the clarity of shapes, the richness of his works, and his visual achievements in expressing neoplatonic ideas of human grandeur.(1483-06.04.1520)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/raffaelloLa-belle-jardiniere.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21"> La Belle Jardinière (1507)</h2>
+        <p class="p1">The artist completed this while he was living in Florence, still in his 20s and an unknown quantity. The painting marked a big leap forward for the young artist, being one of the most ambitious of the Madonnas he painted in Florence, and borrowing enthusiastically from compositions by Leonardo da Vinci (as can be noted from the landscape winding into the distance and the detailed flora in the foreground)—not unusual, though suggesting Raphael was still finding his own signature flash and dash. The clear-cut triangular composition is also pure Leonardo, who was formalizing his mathematics of painting at the time, whereas the evolution of La Belle Jardinière from cartoon to canvas shows that Raphael had a real breakthrough when he incorporated Leonardo-style psychological gestures to connect the figures of the Virgin, the Christ, and John the Baptist. Look at that motherly hand the Virgin places on baby Jesus’s pudgy little arm.
+
+          Despite the shadow of the great Leonardo, it is a fantastically accomplished painting. Why place it at the bottom of Raphael’s most famous pictures? Well, because it is compromised: Raphael’s original drawings have baby John the Baptist in a crown of grape leaves, meant as an allusion to Bacchus, the god of wine—a reference to antiquity that made a strange reappearance in the more imaginative Florentine painting of the time, with the God of Wine foreshadowing the wine of the sacrament. (Little John’s leopard skin jumper is a relic of this.) Someone—probably the unknown patron—didn’t like the more heady allusions too much.
+          
+          As the Metropolitan Museum of Art Renaissance specialist Carmen Bambach argues: “The decision to remove the bacchic attributes from the infant John the Baptist in Raphael’s final painting of La Belle Jardinière constituted a major revision of iconography, one which returned the saint’s portrayal to a strictly conventional Christin representation. It is the kind of serious revision of content, I would argue, that speaks of a patron’s involvement, rather than solely of an artist’s voluntary aesthetic decision.”
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/raffaelloLa-belle-jardiniere.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/Raffaello_Sanzio.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">Self-Portrait (1506)</h2>
+          <p class="p">The history books back up that Raphael was a bona fide babe (in no small part averred by his well-documented success with women), but this painting seals the deal. Dressed in simple black, with mournful brown doe eyes looking askance at the viewer, the artist is definitely going for that soulful I-listen-to-the-Smiths kind of vibe that would have had ladies swiping right nonstop if Tinder had been a thing back then. The only reason the portrait doesn’t rank higher in our top 10 is because it’s difficult to ascertain how close it is to his likeness given a dearth of other attributable portraits.
+
+            Nevertheless, the painting seems to have provided the template for Raphael’s sneakiest self-portrait, when he inserted himself into one of his greatest masterpieces, The School of Athens, as a babyfaced bystander whom Giorgio Vasari first identified in tender terms: “He has a youthful head and a very modest appearance coupled with a pleasant and gentle grace, and he is wearing a black beret.”
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/Raffaello_Sanzio.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaellothreegraces.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Three Graces (1505)</h2>
+          <p class="p">Raphael depicts three naked women in back- and front-facing views, perhaps mimicking the dancing muses from Boticelli’s Primavera (c. 1470) or, more likely, a classical Greek sculpture of the same name, according to historians J.A. Crowe and G.B. Cavalcaselle. It’s worth noting that Raphael was one of the first artists to incorporate nude female models (rather than prepubescent boys) into his life-drawing practice. Thus, we’re landing this one at respectable number seven since the artist is not only flexing his art-historical knowledge, but also flaunting his real-time access to Italy’s finest femmes. In fact, in their magisterial 1882 tome on the artist, Crowe and Cavalcaselle pay close attention to the Graces’ unmitigated realism beget by Raphael’s assiduous life studies:
+
+            “All are bound together by a common feeling, they have a similar occupation, their faces, their naked shapes are all taken from a single model, a graceful, young, fleshy girl of Umbrian type…. There are parts of The Three Graces which are not faultless; there are outlines and articulations that are awkward or defective; and yet the youth and elegance of these rounded forms are fascinating, and their flesh is modelled and blended with so much delicacy, that we forget the imperfections or lose them in the dreamy atmosphere which covers the distance of rolling ground against which they are seen.”
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaellothreegraces.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaellotriumphGalatea.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> The Triumph of Galatea (1514)</h2>
+          <p class="p">Raphael enjoyed the patronage of the richest man in Italy, the banking tycoon Agostino Chigi, who commissioned this fresco for his family villa. It’s the first purely mythological scene that the artist painted, representing the ideals of love and beauty through the Greek tale of Galatea and Pygmalion. As our above discussion of Three Graces suggests, Raphael was no stranger to beauty, taking upon himself the undoubtedly arduous task of incorporating female models into his studio practice. Yet The Triumph of Galatea ranks one higher because his correspondence with Chigi reveals just how dedicated he was to seeing as many naked women as possible—for accuracy, obviously. In an undated letter to his patron, the artist writes:
+
+            “As to the Galatea… I tell you that to paint a beautiful woman I should need to see many, with the further condition that you should be with me to choose the most beautiful. But as both good judgement and beautiful women are rare I must make use of a certain ideal which presents itself to my mind. Whether this in itself has any artistic excellence I know not, but I do my best to attain it.”
+            
+            So, to recap: Raphael not only made the case to appraise as many pretty models as possible before painting Galatea, he also hooked up his bro Chigi by inviting him along for the ride—and he slid in a humble brag about his own artistic talent. A clever boy indeed.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaellotriumphGalatea.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaellodisputation.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Disputation of the Most Holy Sacrament (1509-10)</h2>
+          <p class="p">The Disputation, or simply “the Disputa,” was commissioned by Pope Julius II almost immediately after Raphael moved to Rome in 1508 as part of a huge project to paint the walls of the Stanza della Segnatura, the pope’s library quarters within the Vatican that are now referred to simply as the “Raphael Rooms.” (In fact, Michelangelo guffawed at the ostentatious youngster’s speedy appointment to the task, since the elder sculptor had to hang around the capital city shaking hands and kissing babies for months before finally landing his Sistine Chapel ceiling gig. The two did not get along.) The frescoes in the four chambers of the stanza each illustrate the best aspects of the human spirit, with the Disputation representing divine truth and depicting the relationship between heaven and earth, with the empyrean populated by Jesus and his coterie and the mortal realm thronged by figures ranging from the clergy to Dante.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaellodisputation.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaellomarriageofthevirgin.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Marriage of the Virgin (1504)</h2>
+          <p class="p">Raphael worked on this painting, also known as Lo Sposalizio, while he was still an apprentice to Perugino. Historians believe he was merely completing a job for a client while his master was out of town, and it’s nearly identical to another painting of the same name Perugino had done shortly beforehand—although many a historian has mooned over Raphael’s superior architectural renderings and more realistic foreground figures. But it’s the young artist’s cheeky signature—inscribed into the cornice of the temple, etched on either side of the painting’s central axis—that lands this early work squarely in the middle of our list. In her essay devoted entirely to the evolution of Raphael’s signature, Rona Goffen notes:
+
+            “One of Raphael’s most ostentatious signatures, the Sposalizio inscription is also one of the most audacious in Italian art…. Raphael’s conspicuous assertion of authorial pride signals professional self-awareness and the realization that the altarpiece was a liminal work, a watershed in his career.”
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaellomarriageofthevirgin.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaellosistinemadonna.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Sistine Madonna (1512)</h2>
+          <p class="p">An altarpiece commissioned for the church of San Sisto in Piacenza, this work depicts a cloud-borne Mary and Christ child, both appearing rather concerned, flanked by two saints and seeming to hover against a backdrop of ghostly putti faces. But it’s the two cherubs at the bottom of the canvas that have made the painting famous. One looks above with his chin in his hand, the other looks off to the side with his head resting on crossed forearms; both look bored out of their minds. Their general sulkiness makes them stand out from the typical rosy-cheeked ebullience of most other cherubim throughout art history. Indeed, their distinctive look may have been Raphael’s way of jabbing his good ol’ frenemy Michelangelo. Art Historian Patricia Emison notes:
+
+            “The degree of distinction between the two is all the more notable given the necessarily uniform height of Michelangelo’s putti caryatids on the Sistine Ceiling, recently completed, the squirming yet inexpressive pairs of which in some cases can be seen to include both a boy and a girl…. If Raphael at this time, c. 1513, may be taken generally to be in a highly competitive relationship with Michelangelo, it should not surprise us that his cherubs are not only more expressive than the closest figures in Michelangelo’s work, but innovatively and intriguingly so.”
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaellosistinemadonna.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaelloTransfiguration.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Transfiguration (1560-20)</h2>
+          <p class="p">Certainly Raphael’s spookiest painting, the Transfiguration also remains one of Raphael’s most controversial works due in no small part to the fact that it was his last before his untimely death on April 6, 1520—his 37th birthday—from a fever purportedly induced by too much sex with his mistress. Curiously, the painting was to be accompanied by another work, The Raising of Lazarus, by Raphael’s two greatest rivals: the Venetian painter Sebastiano del Piombo and, of course, Michelangelo.
+
+            Although the transfiguration of Christ was a popular scene to depict at this time, Raphael—always intrepid and undoubtedly trying to pull one over on Michelangelo once again—decided to combine two biblical scenes in his version. The bottom half shows a boy being exorcised of his demons; the top half portrays Jesus ecstatically reveling in his body’s divine glory (and overawing his onlookers) before he ascends into heaven. The painting ranks in the top three of this list because of its sheer uniqueness: There is no pictorial tradition for this conflation, and none of the interpretations—political, liturgical, theological, or otherwise—offer much insight. It is as idiosyncratic as it is enigmatic. As Christian K. Kleinbub says:
+            
+            “Being the culmination of Raphael’s lifework, the very summa of visuality in Italian Renaissance painting, Raphael’s Transfiguration remains an incomparable document of its moment and the sophisticated thinking of its maker.”
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaelloTransfiguration.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/raffaellotheschoolofathens.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">The School of Athens (1509-11)</h2>
+          <p class="p1">Regarded as Raphael’s greatest masterpiece, The School of Athens sits opposite the Disputation of the Most Holy Sacrament in the Stanza della Segnatura and represents worldly truth, i.e. philosophy. It’s a virtuosic wonder of perspective and populated by an intellectual who’s-who of Western thought from Plato and Aristotle to Ptolemy and Euclid. The painting tops our list of the artist’s most brilliant works because Raphael ostensibly knew he’d created something that would change the course of painting forever—after all, to show he knew just how good he was, Raphael went ahead and included himself in the scene, too, the same moody face of his earlier self-portrait. And why shouldn’t he have? It ain’t bragging if it’s true. As Vasari said:
+
+            “Nature had ample cause, on the other hand, to make clearly resplendent in Raphael all those rare virtues of mind, accompanied by as much grace, study, beauty, modesty, and fine manners as would have sufficed to cover up any flaw, no matter how ugly, or any blemish, no matter how large. As a result, It is safe to say that those who possess as many rare gifts as were seen in Raphael from Urbino are not simple mortals but (if it is permitted to speak in this way) mortal gods, and that those who by their endeavors leave behind in this world an honored name in the annals of fame can also hope to enjoy a worthy reward in Heaven for their hard work and merit.”
+            
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/raffaellotheschoolofathens.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./raffaello.js"></script>
+ </body>
+</html>

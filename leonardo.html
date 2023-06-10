@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="leonardo.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/LEONARDO.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Leonardo Da Vinci</h1>
+          <p class="partist">Leonardo di ser Piero da Vinci, Italian hezarfen who lived during the Renaissance, is an important philosopher, astronomer, architect, engineer, inventor, mathematician, anatomist, musician, sculptor, botanist, geologist, cartographer, writer and painter.(15.04.1452-02.05.1519)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/LeonardodaVinciMonaLisa.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">Mona Lisa</h2>
+        <p class="p">The world’s most famous artwork, the Mona Lisa draws thousands of visitors to the Louvre Museum each day, many of whom are compelled by the sitter’s mysterious gaze and enigmatic smile. The seemingly ordinary portrait of a young woman dressed modestly in a thin veil, somber colors, and no jewelry might also confound its viewers, who may wonder what all the fuss is about. The painting’s simplicity belies Leonardo’s talent for realism. The subject’s softly modeled face shows his skillful handling of sfumato, an artistic technique that uses subtle gradations of light and shadow, rather than line, to model form. The delicately painted veil, the finely wrought tresses, and the careful rendering of folded fabric reveal Leonardo’s tireless patience in recreating his studied observations. Moreover, the sitter’s perplexing expression only adds to her realism. Her smile might be engaging or it might be mocking—viewers can’t quite figure it out because, like a human, she is a complex figure, embodying contrary characteristics simultaneously.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/LeonardodaVinciMonaLisa.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/sonaxsamyemeyi.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21">Last Supper</h2>
+          <p class="p1">One of the most famous paintings in the world, the Last Supper was commissioned by Ludovico Sforza, duke of Milan and Leonardo’s patron during his first stay in that city, for the Dominican monastery of Santa Maria delle Grazie. Depicting a sequential narrative, Leonardo illustrates several closely connected moments in the Gospels, including Matthew 26:21–28, in which Jesus declares that one of the Apostles will betray him and then institutes the Eucharist. Leonardo, who was intrigued by the manner in which a man’s character can reveal itself in posture, expression, and gesture, depicted each disciple’s unique reaction to the declaration. The Apostles’ postures rise, fall, extend, and intertwine as they appear to whisper, yell, grieve, and debate around Jesus, who sits serenely in the center. Because of Leonardo’s experimental painting technique, in which he used tempera or oil paint on two layers of preparatory ground, the work began to disintegrate soon after he finished it. Viewers, however, can still recognize it as a complex study of varied human emotion, revealed in a deceptively simple composition.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/sonaxsamyemeyi.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davinciginevra.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Ginevra de’ Benci</h2>
+          <p class="p">Housed in the National Gallery of Art in Washington, D.C., the portrait of Ginevra de’ Benci is the only painting by Leonardo publicly displayed in the Western Hemisphere. It is one of Leonardo’s earliest works, finished when he was in his early 20s, and shows some of the unconventional methods he would use throughout his career. Inspired by his Northern contemporaries, Leonardo broke with tradition by depicting the solemn young woman in a three-quarter pose rather than the customary profile, and thus he may have been the first Italian artist to paint such a composition. He continued to use the three-quarter view in all of his portraits, including the Mona Lisa, and it quickly became the standard for portraiture, so ubiquitous that viewers take it for granted today. Leonardo may also have used his fingers when the paint was still tacky to model Ginevra’s face, as suggested by the fingerprints found in the paint surface. On the reverse side of the painting, a wreath of laurel and palm encircles a sprig of juniper (ginepro in Italian—a pun on the sitter’s name), and a scroll bearing the Latin phrase “beauty adorns virtue” entwines each of the flora. The truncated appearance of the reverse side suggests that the painting may have been cut at the bottom, possibly because of damage from water or fire. Some scholars speculate that the portrait on the obverse would have included Ginevra’s hands and propose that a silverpoint study of arms and hands housed at Windsor Castle may have served as a preliminary drawing.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davinciginevra.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davinciheadwoman.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Head of a Woman</h2>
+          <p class="p">Head of a Woman, a small brush drawing with pigment, depicts a young woman with her head tilted and her eyes downcast. Her posture recalls the Virgin Mary in Leonardo’s The Virgin of the Rocks, suggesting that the drawing may have served as a model. The drawing’s nickname, La scapigliata, translates to “disheveled” and refers to the young woman’s wayward strands of hair. The loosely sketched tendrils and shoulders contrast with the highly finished face, where Leonardo gently modeled the woman’s delicate features, from her heavy eyelids to her tender lips. It reveals Leonardo’s fluid means of working, utilizing both expressive drawing to create form and controlled layering to provide detail.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davinciheadwoman.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davinciLady_with_an_Ermine.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Lady with an Ermine</h2>
+          <p class="p">Many art historians identify the youthful woman in Lady with an Ermine as Cecilia Gallerani, the mistress of Leonardo’s patron, Ludovico Sforza, duke of Milan. The ermine was often used as an emblem for the duke. The woman turns her head to the right, her bright eyes seemingly directed toward something outside the frame. Although the painting has been heavily overpainted, notably the dark background, it nonetheless reveals Leonardo’s knowledge of anatomy and his ability to represent character in posture and expression. He captures the girl’s youth and genial nature in her guileless features, attentive gaze, and tender embrace of the ermine, which sits with its head cocked regally and alert. Her slender hand reveals the complicated bone structure beneath the skin, just as the head of the ermine suggests the skull underneath the finely rendered fur.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davinciLady_with_an_Ermine.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davincisaintanne.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Virgin and Child with Saint Anne </h2>
+          <p class="p">Some scholars believe that The Virgin and Child with Saint Anne was Leonardo’s last painting, and in this work he used many of the conventions that he had established throughout his career to depict three generations of the Holy Family—Saint Anne, her daughter, the Virgin Mary, and the Christ Child. Anne, at the apex of the pyramidal composition, watches Mary, who sits on her lap, as the Virgin tenderly restrains the Christ Child from mounting a lamb. Contrasting with the knowing infant Leonardo depicted in The Virgin of the Rocks, the Christ figure in the The Virgin and Child with Saint Anne appears innocent, demonstrating playful juvenile behavior and showing a trusting expression as he returns his mother’s gaze. The interactions between the figures feels intimate and reveals Leonardo’s ability to represent convincing human relationships. The painting also shows Leonardo’s lifelong interest in believably representing three-dimensional space on a two-dimensional surface. As in many of Leonardo’s paintings, the figures sit amid a fantastical landscape. Using aerial perspective, a technique that he wrote about in his Treatise on Painting, Leonardo created the illusion of distance by painting the rocky formations in the background so that they appear blue-gray and less detailed than the landscape of the foreground. He used this technique in many of the landscapes of his earlier works, including the Mona Lisa and The Virgin of the Rocks.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davincisaintanne.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davincisalvator.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Salvator Mundi</h2>
+          <p class="p">The head-on portrait of Salvator Mundi (c. 1500; “Savior of the World”) made headlines in 2017 when it sold for a record-breaking $450.3 million at auction. The high price was all the more surprising when considering that Salvator Mundi was in poor condition, it had a questionable history, and its attribution was a subject of debate among scholars and critics. Many pundits remarked on the poor skill used to represent Jesus’ face; the stiff posture, which was so unlike the Renaissance master’s characteristic twisting poses; and the unconvincing representation of the glass globe, which, if solid, would have reflected a distorted view of its holder, an optical trick that Leonardo would have known about. Christie’s, the auction house that managed the sale, dismissed the criticisms, noting that any lack of craft was the result of heavy restoration in previous centuries and pointed to the soft modeling of Jesus’ right hand and the finesse of his tight curls, both characteristics that resembled Leonardo’s technique. The auction house also asserted that conservators had confirmed that the painting was made of the same materials that Leonardo would have used, notably ultramarine, an expensive high-quality blue pigment often reserved exclusively for virtuosos. The attribution debate continued well after the sale, but the interest in the work and the large sum paid at auction attested to Leonardo’s enduring celebrity and to his powerful position in the art history canon five centuries after his death.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davincisalvator.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davinciself-portrait.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Self Portrait</h2>
+          <p class="p">Long regarded as a self-portrait, the red chalk drawing of an old man with long wavy hair and a beard has been reproduced to such an extent that it defines how most people think of Leonardo’s appearance. Yet some scholars argue that the figure, with its craggy features, furrowed brow, and downcast eyes, appears much older than the age Leonardo ever reached; Leonardo died at age 67. They propose that the drawing may be one of his grotesque drawings, sketches he habitually made in his notebooks of people with eccentric features. Whomever the portrait represents, it is a departure from Leonardo’s often captivating subjects, yet he managed to imbue the figure with the nobility and wisdom of a mature age.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davinciself-portrait.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/davincivirginoftherocks.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Virgin of the Rocks</h2>
+          <p class="p">Based on stylistic evidence, many scholars consider the painting The Virgin of the Rocks in the Louvre the first of two paintings that Leonardo made of an apocryphal legend in which the Holy Family meets Saint John the Baptist as they flee to Egypt from Herod’s Massacre of the Innocents. Leonardo was involved in years of litigation with the Confraternity of the Immaculate Conception, which commissioned the work, and the dispute eventually led Leonardo to paint another version of the subject about 1508, which is now housed in the National Gallery of London. The first painting shows the ways in which Leonardo ushered in the High Renaissance. Early paintings from this period often depicted figures in linear arrangements, separate from one another, and stiff in form. In The Virgin of the Rocks, however, the figures of the Virgin Mary, the Christ Child, the infant John, and an archangel are arranged in a pyramidal composition, and they not only convincingly occupy a space but interact with one another through gestures and glances. A youthful Mary sits on the ground in a mysterious rocky landscape, not on a throne as so many early Renaissance paintings depicted her. Her body has movement—it seems to sway as she tilts her head protectively toward the infant John, who kneels in prayer at the left, and she looks as if she nudges him over to the Christ Child at the right. Jesus, in turn, blesses John as an archangel, seen in a complex pose from the back, points toward John and glances inscrutably outward at the viewer. Leonardo also notably excluded traditional holy signifiers—halos for Mary and Christ and a staff for John—so that the Holy Family appears less divine and more human.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/davincivirginoftherocks.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+      <br>  <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./leonardo.js"></script>
+ </body>
+</html>

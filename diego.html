@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="diego.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/diegovelazquez.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Diego Velázquez</h1>
+          <p class="partist">Diego Rodríguez de Silva y Velázquez is a Spanish painter. King IV. He worked as chief painter at Felipe's court. He is one of the unique painters of the Baroque period and is famous for his portraits. Due to his closeness to the Spanish King, he painted many nobles and palace life.(06.06.1599-06.08.1660)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/diegojester.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">The Jester Don Diego de Acedo</h2>
+        <p class="p">Diego de Acedo is sitting outside on a stone. He is wearing a conventional dark dress with beautiful intertwined fabrics and a cap positioned sideways on his head.
+
+             The books and the inkstand most likely allude to his role at the Spanish Court. The portrait was painted toward the end of the 1630s before the Torre de la Parada, a sixteenth-century chasing lodge that Philip had remodeled and brightened for his collection of paintings to be displayed.
+            
+            Completed in: 1645
+            
+            Style or Period: Baroque
+            
+            Measurements: 106 cm × 83 cm
+            
+            Location: Museo del Prado
+            
+            Medium: Oil on canvas
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/diegojester.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/diegowaterseller.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">The Waterseller of Seville</h2>
+          <p class="p">The elderly man is giving the young boy a glass of water.
+
+            Both the subjects never look at one another, nor do they look at the watcher. This could be a direct result of their societal position or something as basic as their age contrast.
+            
+             Completed in: 1618 to 1622
+            
+            Style or Period: Baroque
+            
+            Measurements: 105 cm x 80 cm
+            
+          Location: Apsley House, London
+            
+             Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegowaterseller.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegoold1.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Old Woman Frying Eggs</h2>
+          <p class="p1">The Old Woman Cooking Eggs shows Velázquez's aptitude in painting individuals in conventional settings and having it encompass us, as observers, to that moment in time.
+
+            Velázquez was roughly eighteen or nineteen when he created this piece.
+            
+            The painting shows a senior woman sitting before an earthen pot in which she is cooking eggs. On the left side is a young boy watching her cook while holding a carafe of wine in one hand and a melon under his other arm.
+            
+           Completed in:1618
+            
+            Style or Period: Baroque
+            
+             Measurements: 100.50 cm x 119.50 cm
+            
+            Location: National Gallery of Scotland, Edinburgh
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegoold1.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegosupper.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Supper at Emmaus</h2>
+          <p class="p">Christ is portrayed after his restoration. The light source in this work enters from the left and seems fixated on or close to Christ's head. The other two men seem to be having some sort of discussion. 
+
+            Velazquez's experimentation with alternate points of view of a subject and his capacity to bring the watcher into an artwork is beautifully demonstrated in this composition.
+            
+            Completed in: 1618-1623
+            
+            Style or Period: Baroque
+            
+            Measurements: 123.2 cm x 132.7 cm
+            
+            Location: Metropolitan Museum of Art
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegosupper.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegotriumph.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">The Triumph of Bacchus</h2>
+          <p class="p1">In The Triumph of Bacchus, Velazquez shows Bacchus encompassed by various intoxicated men. Bacchus is putting a wreath on one of the men, who is kneeling down.
+
+            The painting is generally known as Los Borrachos or The Drunks. Two of the primary characters gaze straight out of the painting at the observers as though welcome them and to join the triumph of Bacchus.
+            
+            Completed in: 1626–1628
+            
+         Style or Period: Baroque
+            
+           Measurements: 165 cm × 225 cm
+            
+            Location: Museo Nacional del Prado
+            
+           Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegotriumph.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegoequestrian.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Equestrian Portrait of the Count-Duke of Olivares </h2>
+          <p class="p">Considered by numerous individuals to be Velázquez's best equestrian portrait, the Equestrian Portrait of the Count-Duke of Olivares, or Gaspar de Guzmán on Horseback. Shows the Count-Duke on a horse, who is ready to gallop. 
+
+            Completed in: 1634
+            
+             Style or Period: Baroque
+            
+          Measurements: 313 cm × 239 cm
+            
+           Location: Museo Nacional del Prado
+            
+           Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegoequestrian.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegolasmeninas.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Las Meninas </h2>
+          <p class="p">Las Meninas has long been recognized as one of the most important paintings in the western world.
+
+            The main focus of the painting is Margaret Theresa who is Philip IV's daughter. The painting beautifully encompassed various subjects and circumstances.  
+            
+           Completed in: 1656
+            
+           Style or Period: Baroque
+            
+            Measurements: 318 cm x 276 cm
+            
+            Location: Museo Nacional del Prado
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegolasmeninas.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegophilip.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Philip IV in Brown and Silver</h2>
+          <p class="p">This painting is sometimes referred to as the Silver Philp.
+
+            Velázquez's combines dark and light colors in his delineation of the silk, silver, and darker tones of Philip's attire.
+            
+            Completed in: 1631 to 1635
+            
+            Style or Period: Baroque
+            
+            Measurements: 200 cm x 113 cm
+            
+         Location: The National Gallery
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegophilip.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/diegoportraitofjuan.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Portrait of Juan de Pareja </h2>
+          <p class="p">In 1648, Philip IV sent Velázquez to Rome to buy some masterpiece paintings for the Alcázar Palace in Madrid.
+
+            Velázquez had with him Juan de Pareja, who at that time was his companion. The two men arrived in Genoa, then went to Milan to see Leonardo da Vinci's Last Supper, and afterward to Venice to see Tintoretto and Titian.
+            
+            They purchased paintings of Titian, Tintoretto, and Veronese en route. During their stay in Rome, Velázquez painted this little oil portrait of Pareja, maybe in anticipation of him knowing he would paint a portrait of Pope Innocent X. And he would have to show him one of his paintings.
+            
+            Pareja was a skilled painter himself.
+            
+           Completed in: 1650
+            
+             Style or Period: Baroque
+            
+           Measurements: 81.3 cm × 69.9 cm
+            
+           Location: Metropolitan Museum of Art, New York
+            
+           Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/diegoportraitofjuan.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+        <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./diego.js"></script>
+ </body>
+</html>

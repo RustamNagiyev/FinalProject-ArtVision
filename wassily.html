@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="wassily.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Vassily-Kandinsky.jpeg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Vassily Kandinsky</h1>
+          <p class="partist">Vasily Vasilyevich Kandinsky, painter and art theorist. He became an important theorist and painter who played an active role in the 20th century with his theories and practices. He pioneered abstract art in Europe. Kandinsky was born in Moscow in 1866. In 1886, he began studying law and economics at Moscow University.(16.12.1866-13.12.1944)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/wassilybluerider.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">Blue Rider</h2>
+        <p class="p1">A work of oil paint on cardboard, this abstract expression known as Blue Rider was made in 1903 and displays a cloaked rider and their horse racing through meadows.According to Kandinsky, the blue colors used are meant to represent spirituality.Due to the abstract nature of the work, many have interpreted it in their own way with the speculation that the figure in the man’s arms must be a child, although truth be told, it may just be a shadow.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/wassilybluerider.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/wassilycirclesinacircle.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">Circles in a Circle</h2>
+          <p class="p">Completed in 1923, Circles in a Circle is an oil-on-campus piece of work that makes heavy use of geometric elements, a style known as geometric abstraction.This provides a good example of how specific geometric shapes often dominated Kandinsky’s work. This painting in particular contains 26 circles intersecting with one another, with different colors and sizes, and all presented within one large, black circle.
+
+            According to Kandinsky, this piece of work represents cosmic harmony, with the combination of the opposites within the circle perfectly balancing one another.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilycirclesinacircle.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassilyseveralcircles.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Several Circles</h2>
+          <p class="p">An oil-on-canvas painting, Several Circles is a piece of abstract art painted by Kandinsky in 1926 and as before, makes use of heavy geometric elements.The variation in the color and size of the circles forms a feeling of abstraction in the work.
+
+            The circles themselves make use of a limited color palette and highlight well the Suprematism often on display in Kandinsky’s work, this being an art movement focusing specifically on basic geometric forms.
+            
+            The weightiness and depth of the circles in Several Circles work to establish a feeling of cosmic harmony and as a result, work to establish both emotional and spiritual connections with those who view it.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilyseveralcircles.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassilysquareswithconcentric.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Squares with Concentric Circles</h2>
+          <p class="p">Certainly, by now the work of Kandinsky in Suprematism is well on display, and Squares with Concentric Circles is no different.
+
+            Completed in 1913, this abstract artwork was painted using watercolors, gouache, and crayon on paper. Due to the simplistic form of squares and circles, it exists as an excellent medium to teach kids about these geometric forms.
+            
+            This piece of work is not just about the arrangement of the shapes but also a display of the artist’s unique synesthesia abilities in his work, providing the viewer a glimpse into the life of a person with synesthesia.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilysquareswithconcentric.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassily_KandinskyUntitled (Study for Composition VII, Premiere Abstraction).jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Untitled (Study for Composition VII, Premiere Abstraction)</h2>
+          <p class="p1">Oil on canvas painting developed in 1913, Untitled marked the point just before the breakout of World War I across Europe.
+
+            As a result of this, it is often considered to be touching upon the heavy themes of doom and destruction as well as the resurrection of the world, making use of haphazard arrays of color and shapes to represent these ideas.
+            
+            Although the theme remains unknown and unexplained, several notable historians suggest the themes alight upon biblical notions of The Garden of Eden, The Flood, Resurrection, and Judgement Day.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassily_KandinskyUntitled (Study for Composition VII, Premiere Abstraction).jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassilyimprovisation28.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Improvisation 28</h2>
+          <p class="p">Another oil on canvas painting, this time developed in 1912, this abstract artwork depicts the eternal struggle between good and evil, a theme dominating most of his works post 1910.
+
+            On one side of the canvas, the evil in the world is represented, these being cataclysmic events and destruction, particularly espoused by depictions of boats, waves, beasts, and weapons.
+            
+            On the other side of the painting, the good in the world is represented, highlighting spiritual salvation. A human couple, the shining sun and candles suggest that there is always hope in a world tainted by evil.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilyimprovisation28.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassilybluemountain.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Blue Mountain</h2>
+          <p class="p">Painted in 1908, The Blue Mountain depicts horses and their riders, a theme he seemingly was captivated by during this period of his career.
+
+            Kandinsky was able to easily associate colors with feelings, where the blue of the mountains suggests a coolness and calmness, whereas the reds and yellows suggest warmth and aggressiveness.
+            
+            It is expected that the three equestrians here are a reference to three of the four horsemen of the apocalypse, set to bring both destruction and revival to the earth.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilybluemountain.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassilyimprovisation31.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Improvisation 31 (Sea Battle)</h2>
+          <p class="p">Improvisation 31 is an abstract construction completed in 1913 depicting a sea battle.
+
+            Shown in the painting is an intense battle between two tall ships amidst tempestuous waters, and although this artwork was developed close to the beginning of World War I, Kandinsky denies any relationship of his work to the event.
+            
+            Instead, it is most often linked to the ongoing themes of spirituality and cosmic relationships within his work, in this case where a catastrophic spiritual conflict has prevailed within the cosmic universe.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilyimprovisation31.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/wassilyYellow-Red-Blue.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Yellow-Red-Blue</h2>
+          <p class="p">Produced by an amalgamation of different colors, Yellow-Red-Blue is an abstract painting developed by Kandinsky in 1925.
+
+            The light and the dark in the painting have been contrasted beautifully, where the left side of the canvas is conveying a myriad of light yellows, blues, and reds whereas the right side of the canvas showcases its darker shades.
+            
+            Kandinsky’s masterful use of color here quite clearly displays his unique artistic vision with synesthesia, with each shade of color playing on the viewer’s emotions.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/wassilyYellow-Red-Blue.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./wassily.js"></script>
+ </body>
+</html>

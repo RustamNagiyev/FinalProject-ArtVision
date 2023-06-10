@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="rembrandt.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Rembrandt(Kenwood).jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Rembrandt Harmenszoon van Rijn</h1>
+          <p class="partist">Dutch painter and printmaker. He is one of the most important painters in European and Dutch art history. He lived in the Dutch Golden Age, when the Netherlands made a breakthrough in trade, science and art. He is also known as the "painter of light and shadows".(15.07.1606-04.10.1669)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/rembrandtanatomylesson.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">The Anatomy Lesson of Dr Nicolaes Tulp, 1632</h2>
+        <p class="p1">This work was one of Rembrandt's earlier pieces; it was painted by the artist at the age of 25, when he had just four other portraits to his name. The piece captures seven Amsterdam surgeons in a lesson with their teacher Dr. Tulp, who is demonstrating how muscles in the arm are attached. Dynamics in the scene are created through the use of light and dark — something that would heavily feature in his art to come.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/rembrandtanatomylesson.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/rembrandtstorm.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">The Storm on the Sea of Galilee, 1633</h2>
+          <p class="p">The current location of this piece remains a mystery, as the artwork was stolen in 1990 by two thieves dressed as police officers. As the title suggests, the painting is in reference to the biblical tale of Jesus calming the storm on the sea of Galilee. It was the only seascape painted by the artist, and is proof of how Rembrandt captures the drama of a moment so easily in a painting, and also his ability to immerse a spectator into the action.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtstorm.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtdanae.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Danae, 1636</h2>
+          <p class="p">All kinds of drama are associated with this 1636 piece, which shows Greek goddess Danae welcoming Zeus into her bed. Originally, Rembrandt used his first wife Saskia van Uylenburgh to model for the piece but it’s thought he later replaced her face with his mistress Geertje Dircx. In 1985, the painting was subject to an acid attack at the Hermitage Museum — the man also proceeded to cut the artwork twice with a knife. Fortunately it was fully restored in 1997.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtdanae.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtnightwatch.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Night Watch, 1642</h2>
+          <p class="p">Widely considered to be Rembrandt’s most famous work, The Night Watch was completed at the height of the Dutch Golden Age. The piece is famous for a variety of reasons but primarily due to its enormous 11ft by 14ft size. It’s also praised for its use of shadow and for capturing a portrait of the military in motion — as soldiers of the time would commonly stand for photos with static poses. Some critics have suggested the piece is connected to Rembrandt’s fall into poverty because it reveals a murder connected to members of the civic militia. It's thought he may have received blackmail or threats as a result of it.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtnightwatch.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtbathshebaatherbath.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Bathsheba at Her Bath, 1654</h2>
+          <p class="p">This painting depicts the Old Testament story of King David, who saw Bathsheba bathing and fell in love with her at first sight. In the piece she holds a letter from David in her hand, while her attendant washes her feet. It’s speculated that the model used for the artwork was Rembrandt’s long-time partner Hendrickje Stoffels, and critics have praised the piece for showing the female body in a realistic way, rather than as an idolised form. This work can now be seen at the Louvre in Paris.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtbathshebaatherbath.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtselfwithberet.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Self-Portrait with Beret and Turned Up Collar, 1659</h2>
+          <p class="p">Painted in 1659, around 10 years before his death, this is one of the artist’s most famous self-portraits. It was created at a time when Rembrandt was battling to avoid bankruptcy — something critics have suggested can be seen through the looser brushstrokes in the piece. Despite the less compact brushwork, the self-portrait shows a close attention to detail, which can be seen in parts such as the cheekbones and the intricate wrinkles under the eye.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtselfwithberet.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtsyndicsofthedrapers.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Syndics of the Drapers’ Guild, 1662</h2>
+          <p class="p">Also known as The Sampling Officials, this artwork was one of the last group portraits painted by Rembrandt. The Guild pictured in the work commissioned Rembrandt to carry out the group portrait, despite his plummeting status and financial problems at the time. It's currently owned by the Rijksmuseum in Amsterdam — a museum famous for its collection of Rembrandt works, including The Night Watch.
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtsyndicsofthedrapers.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtjewishbride.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Jewish Bride, 1667</h2>
+          <p class="p">The Jewish Bride painted in 1667, during the last years of Rembrandt’s life, was not the original name of the piece. It gained its current title in the 19th century, after an Amsterdam art collector suggested the people in the work represent a Jewish father giving his daughter a necklace on her wedding day. Alternative interpretations have alluded to it being of the artist’s son Titus and his bride. It’s another great example of Rembrandt capturing raw emotion in a single work.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtjewishbride.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/rembrandtreturnprodigalson.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Return of the Prodigal Son, 1669</h2>
+          <p class="p">This piece was one of Rembrandt’s last, and refers to the famous biblical tale of the same name. It’s considered to be one of the artist’s most moving artworks due to the fact that it captures the strong bond between father and son. Many believe the father is shown to be expressing multiple emotions at the same time, including grief, mercy and love. It’s this depth of feeling in the father’s complex facial expression that particularly stands out in this work.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/rembrandtreturnprodigalson.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+      <br>  <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./rembrandt.js"></script>
+ </body>
+</html>

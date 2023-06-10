@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="picasso.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+        <div class="container2">
+            <img class="imgartist" src="./pictures/Pablo1.jpg" alt="Resim Açıklaması">
+            <div class="content2 hidden2">
+              <h1 class="hartist">Pablo Picasso</h1>
+              <p class="partist">Pablo Picasso is a Spanish painter, sculptor, stage designer, poet and playwright who lived in France. He is one of the best known figures of 20th century art.(October 25,1881-April 8, 1973)</p>
+            </div>
+            <button class="btn3" onclick="toggleContent2()">(.......)</button>
+          </div>
+        </div>
+    
+
+
+    <div class="container">
+      <img class="img" src="./pictures/picassooldguitarist.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">The Old Guitarist, 1903-1904</h2>
+        <p class="p">Considered to be one of Pablo Picasso’s famous works, this painting was made at the time one of his close friends, Casagemas, committed suicide. This was the time in life when Picasso was more empathetic towards the downtrodden of the society and painted several canvases with the poor, ill and misfortune as his subjects.
+            His empathy came from personal experiences, as he, too, was penniless a couple of years before this painting. This Pablo Picasso artwork was made in Madrid, and the distorted nature of this painting is a recall from his past works like El Greco.
+            In this picture, you will find a sightless and bent man holding a humungous, round guitar. While the brown body represents the shift in color, the instrument covers the space around the figure, both physically and metaphorically.
+            The blindness and poverty-stricken man is very evident. At the time of the painting, several pieces of literature symbolized that blond characters had powers of inner vision, which is what Picasso is referring to here.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/picassooldguitarist.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/picassoma-jolie.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">Ma Jolie, 1912</h2>
+          <p class="p">Known to be one of the most famous paintings by Picasso, the artist here is trying to suggest a musical association by locating a music staff and treble clef near the stenciled letters.
+            Literally translating to ‘My Prettiest Girl', this painting was a reference to the popular song performed at the Parisian music hall Picasso often went to. The name of this painting was essentially a nickname given to his lover at the time, Marcelle Humbert.
+            In this picture, you will see her figure constructed with Picasso’s signature shifting planes of Analytic Cubism. While you can find many clues of the representation of the artist’s beloved, it is far from any conventional portrait.
+            You will see a triangular form strung like a guitar in the lower bottom, while below it, you will see four fingers. Along with that, you will see the elbow on the right and a floating smile, which is hardly understandable on the top half of the canvas.
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassoma-jolie.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/picassola-vie.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">La Vie, 1903</h2>
+          <p class="p">Another one of Pablo Picasso’s famous art, this oil painting, is often said to be the pinnacle of Picasso’s blue period. Located in the permanent collection at the Cleveland Museum of Art, this painting was made in Barcelona in 1903.
+            This was Pablo Picasso’s famous artwork that depicted two pairs of people and a naked couple confronting a mother carrying her child in her arms.
+            You will also find two paintings within the painting. While the upper one shows a nude couple hugging, the lower one is of a lonesome nude person. The other pair can be seen in the background of the room, which appears to be a studio. The latter is said to be inspired by Vincent Van Gogh’s Sorrow.
+            Even though Picasso repainted another motif of a birdman attacking a naked woman, only traces of it are visible to the naked eye.
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassola-vie.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/picassoavignon.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Les Demoiselles D’Avignon, 1907</h2>
+          <p class="p">Of all Pablo Picasso’s drawings and paintings, this is one of the most enormous oil paintings. It essentially portrays five naked female prostitutes in a brothel near a street in Barcelona. This art is now a part of the Museum of Modern art.
+            Neither of the figures is conventionally feminine, and each is portrayed in a rather confrontational and disconcerting manner. The figures are represented with disjointed and angular body shapes.
+            However, the one on the left shows a dress of Egyptian origin and noticeable facial features. While the two on the right are drawn in an African mask style, the two on the left are of the Iberian style of Picasso.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassoavignon.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" id="guernica" src="./pictures/guernicapablo.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Guernica, 1937</h2>
+          <p class="p1">Much like the prior mentioned painting, this one too is a large oil painting and is considered to be one of Pablo Picasso’s famous paintings. Several critics and art enthusiasts regard this painting as a very powerful and moving anti-war image of history and Picasso’s best work.
+            The white, black and grey painting shows suffering created through chaos and violence. Although you have to be rather discerning to notice the contents of the painting, it shows a stabbed horse, a dead baby along with a screaming woman and a mutilated soldier and flames.
+            It was painted in Paris as a response to the 1937 bombing of Guernica. This is Picasso’s famous artwork which is still showcased in Madrid at Museo Reina Sofia.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/guernicapablo.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/picassoportrait-of-dora-maar.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Portrait of Dora Maar, 1937 </h2>
+          <p class="p">Undoubtedly one of the most famous works of Picasso, this oil painting depicts Dora Maar, one of Picasso’s lovers.
+            This is rather one of Pablo Picasso’s easy paintings when it comes to its description. Here you will see the subject sitting in a chair. She is depicted with expensive clothing and jewelry and portrayed to be an elegant woman.
+            Nevertheless, there are several intricate details in the painting that you should not miss. For one, you will see her wearing a deco jacket with a flower motif and long red nails. The posture further indicates that she is relaxed and has one hand risen to her cheek. It is located in Musee Picasso, in Paris, where it is said to be one of Pablo Picasso’s best paintings.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassoportrait-of-dora-maar.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/picassofigures-at-the-seaside.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Figures at the Seaside, 1931</h2>
+          <p class="p">During the summer of 1931, Picasso visited the French Riviera Resort and painted a series of beach scenes, one of which is this. This painting is said to be inspired by the painter’s liaison with a 19-year old model and his deteriorating terms with his then-wife, Olga.
+            This is one of Picasso’s famous paintings that aptly show Pablo Picasso’s painting style and how he implements intricate details in plain sight. This painting portrays two mantis-headed beings sitting together.
+            This painting was quite popular with the surrealists, mainly because of the animal’s habit of eating the male partner after intercourse and how it produced yet another visual metaphor.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassofigures-at-the-seaside.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/picassothe-soup.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Soup, 1902</h2>
+          <p class="p">Considered to be Picasso’s most famous painting by many, this painting was made when he was suffering from poverty. Although he got immense success in the earlier year, he quickly ran out of funds and was again one with the poverty surrounding him. In this painting, Picasso reflects upon the experiences he had from visiting a women’s prison.
+            His inspiration for this painting was the murals painted by Pierre Puvis de Chavannes inside the Pantheon. Much like one of the drawings in the mural, this painting, too, showed a woman helping another from starving on the street. However, even in the original mural, Picasso was the one who sketched this scene.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassothe-soup.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/picassoarmchair.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Large Nude in a Red Armchair, 1929</h2>
+          <p class="p">Housed in the Merill Collection, this painting is said to be influenced by surrealism and be a portrait of his first wife, Olga. Picasso had a total of 7 serious relationships throughout his lifetime, all of which inflicted some kind of trauma for him, along with this one.
+            Olga turned bitter towards the artist once they ended their relationship. You can clearly see the influence of such trauma in Pablo Picasso’s paintings. While earlier on, she was portrayed as an elegant and sentimental woman, from this point, his color pallet changed to a more saturated color, muted tones. That said, recently, in 2012, this painting was vandalized but quickly restored by authorities.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/picassoarmchair.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+      <br>  <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./picasso.js"></script>
+ </body>
+</html>

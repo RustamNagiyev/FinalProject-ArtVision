@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="jan.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Portrait_of_a_Man_by_Jan_van_Eyck-small.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Jan van Eyck</h1>
+          <p class="partist">Jan van Eyck or Johannes de Eyck, Flemish painter. He is known for mastering the newly developing oil painting technique in the 15th century. He mostly painted portraits and religious themes. He started to express his understanding of depth in painting with a brand new technique.(1390-09.07.1441)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/janportrainofamanbluechaperon.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">Portrait of a Man with a Blue Chaperon</h2>
+        <p class="p">This painting, done around 1430, depicts a man in a blue chaperon, or hood, holding a ring. Done in what we would recognize as a typical portrait style (though a very innovative style at the time), the subject's gaze is focused on the side of the viewer.
+
+            Sometimes referred to as Portrait of a Jeweller, or Man with a Ring, the work is very small and the subject is not identified. The ring in the man's hand was originally believed to signify his profession, but later scholars have come to believe it may, in fact, be an engagement ring.
+            
+            There was also controversy over the years as to whether the work was actually done by van Eyck or not, but modern imaging techniques have shown that the work is van Eyck's signature style.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/janportrainofamanbluechaperon.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/jansaintfrancis.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">Saint Francis Receiving the Stigmata</h2>
+          <p class="p">This work is another unsigned piece, this time, with a religious theme. It depicts Saint Francis of Assisi receiving Christ's stigmata (the wounds of the Crucifixion) on his own hands and feet. This painting highlights van Eyck's signature realism, in the portraits of Saint Francis and his assistant Brother Leo, and the landscape background.
+
+            There are actually two nearly identical panels with this painting, one much larger than the other. Although the evidence is circumstantial, the general consensus is that both panels were done by van Eyck sometime between 1430 and 1432.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/jansaintfrancis.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/janportraitofbaudouin.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Portrait of Baudouin de Lannoy</h2>
+          <p class="p">This portrait, completed around 1435, is definitively considered a van Eyck work. The subject, Baldwin de Lannoy, was an ambassador of Philip the Good to the court of Henry V of England.
+
+            In typical van Eyck style, he is portrayed fairly realistically, without idealized appearance or features. The textures in the painting are highly realistic and rendered in detail, especially the subject's robe.
+             
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/janportraitofbaudouin.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/janmadonnaofchancellorrolin.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Madonna of Chancellor Rolin</h2>
+          <p class="p">This work was commissioned by Nicolas Rolin, who was the chancellor of the Duchy of Burgundy. Completed around 1435, it shows the Virgin Mary, seated on the right, presenting Baby Jesus to Chancellor Rolin, who sits on the left. Above the Virgin Mary, an angel hovers, ready to place an exquisite crown on her head.
+
+            As with other van Eyck works, the interior setting and exterior landscape are highly detailed and colorful. The painting is filled with religious symbolism that was typical of the era, such as in the pose of the Madonna holding Christ on her knee. 
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/janmadonnaofchancellorrolin.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/janvirginandchild.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Virgin and Child with Canon van der Paele</h2>
+          <p class="p">This painting, completed between 1434-1436, is a commissioned work that combines a portrait of the commissioner with religious figures and symbolism.
+
+            Joris van der Paele, a scribe in the papal chancery, is shown in the company of the Virgin Mary and Baby Jesus, as well as Saint George, and Saint Donatian. Van der Paele commissioned this work to be an altarpiece that be at his memorial, as he was elderly, and very ill at the time. As with van Eyck's other subjects, van der Paele is portrayed realistically, wearing the white surplice that was typical of style of someone in his position. 
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/janvirginandchild.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/janluccamadonna.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Lucca Madonna</h2>
+          <p class="p">This painting, completed around 1437, is believed to be a panel of a triptych, with the other two panels long lost. It's quite small, leading scholars to believe it was intended as a private devotional artwork; rather than, one intended for public display.
+
+            In the painting, the Virgin Mary is nursing baby Jesus. It's thought that van Eyck based the Virgin's portrait using his wife: Margaretha, whom he also portrayed in other portraits.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/janluccamadonna.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/janmadonnaatthefountain.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Madonna at the Fountain</h2>
+          <p class="p">This painting is legitimate in that it's clearly signed by van Eyck; as well as, dated 1439, removing any uncertainty that it might not be van Eyck work. The work is also very small, measuring 19 cm x 12 cm. It's somewhat unique for a van Eyck's painting in that the Virgin Mary is dressed in blue, while in his other paintings she is dressed in red. Red was the typical choice of the Northern Renaissance painters at the time, while blue was often used in Italian depictions of the Madonna, so this choice reflects a growing Italian Renaissance influence in van Eyck's work.
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/janmadonnaatthefountain.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/jansaintjerome.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Saint Jerome in his Study</h2>
+          <p class="p">This work is attributed to van Eyck's workshop but is dated 1442, one year after the van Eyck's death. It is believed that van Eyck may have personally begun the painting, but it was finished posthumously by his workshop assistants.
+
+            The depiction of Saint Jerome in his study is fairly typical for this saint, and he is portrayed with all the items and tools of an educated Renaissance man. 
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/jansaintjerome.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/janSaint_Christopher.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Saint Christopher</h2>
+          <p class="p1">Saint Christopher is shown wading in a stream, carrying Baby Jesus on his shoulders. 
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/janSaint_Christopher.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+      <br>  <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./jan.js"></script>
+ </body>
+</html>

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="henri.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/henrymatisse.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Henri Matisse</h1>
+          <p class="partist">Henri Matisse is one of the most important painters of the 20th century. With his masterful use of color, he is considered one of the greatest artists of modern art, along with Picasso and Kandinsky.(31.12.1869-03.11.1954)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/henrisnail.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">The Snail</h2>
+        <p class="p">In 1948 Matisse was kept from painting due to him being sick. He was bed-bound, however, he still created various works of art known as gouaches découpées (Paper Cuts Outs).
+
+            These were made by cutting or tearing shapes from paper, which had been painted with gouache paint. The Snail is one of his most famous works of gouaches découpées.
+            
+            Matisse said about gouaches découpées
+            
+            "allows me to draw in the color. It is a simplification for me. Instead of drawing the diagram and putting the color inside it - the one altering the other - I draw straight into the color"
+            
+            Matisse's daughter Mme Duthuit said that her father made many drawings of snails during his sick time.
+            
+            The concentric pattern in The Snail is framed by the various color shapes, which are the focal points of the artwork, they mimic a spiral pattern found in the snail's shell.
+            
+            Completed in: 1953
+            
+            Style: Fauvism
+            
+            Measurements: 287 × 288 cm
+            
+            Location: Tate Modern Collection in London
+            
+            Medium: Paper, Gouache
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/henrisnail.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/henriwomanwithhat.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h21">Woman with a Hat</h2>
+          <p class="p1">Woman with a Hat (Femme au chapeau) was the focal point of a significant art debate that prompted the art development and movement of twentieth-century Fauvism.
+
+            The term Fauve ("wild beast") was begotten by an art critic and became associated with the artists who displayed their art in brilliantly colored canvases at the central gallery of the Grand Palais.
+            
+            Femme au chapeau marked a complex change from regulated classical brushstrokes of Matisse's earlier works to a progressively expressive and individualistic style. His utilization of non-naturalistic colors and free brushwork created a scrappy or "incomplete" quality in the composition.
+            
+            The artist's wife, Amélie, modeled for this portrait. She is delineated in an elaborate outfit with attributes of a classic French bourgeoisie style: a gloved arm holding a fan with an elaborate hat.
+            
+            When allegedly asked about the tone of her dress Madame Matisse said she was actually wearing black when she possed for the portrait.
+            
+            Completed in: 1905
+            
+            Style: Fauvism
+            
+            Measurements: 80.65 cm × 59.69 cm
+            
+            Location: San Francisco Museum of Modern Art
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henriwomanwithhat.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henristilllife.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Still Life with Oranges</h2>
+          <p class="p">Painted with rapid and strong brushstrokes, Matisse's vibrant still life shows a bowl of oranges, a coffee mug, and a translucent green pitcher on a red tabletop.
+
+            The distinctive oranges have light yellow tones angled from the left side that depicts a sunlit room. The painting utilizes complementary colors to create a feeling of solid structure and space between various objects. Rather than imitative the realistic colors and memic the actual still life scene.
+            
+            The lively colors give an indication of Matisse's Fauvist period. Where unnatural colors were at times added to his paintings to give more emotion. 
+            
+            Completed in: 1899
+            
+            Style: Expressionism
+            
+            Measurements: 94 cm x 83 cm
+            
+            Location: Washington University Gallery of Art (WUSTL), St. Louis, MO, US
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henristilllife.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henriopenwindow.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Open Window</h2>
+          <p class="p">Matisse's Open Window is a symbol of early Fauvism. It's praised as one of his most significant and early paintings that contributed to the Fauve school, a gathering of artists, including André Derain, Maurice de Vlaminck, and Georges Braque, that rose in 1904.
+
+            Fauve paintings are recognized by the strong volumes of colors that are implemented without mixing and the wide brushstrokes in the artworks. 
+            
+            Open Window represents the very beginning of Matisse's art carrier in Fauvism. It was painted in Collioure, a community on the Mediterranean shoreline of France to which Matisse went with Derain in the mid-year of 1905.
+            
+            When this work was being painted, Derain stated that even the shadows in Collioure were an "entire universe of lucidity and radiance." Meaning there stay in Collioure inspired his and Matisse's artworks.
+            
+            Completed in: 1905
+            
+            Style: Fauvism
+            
+            Measurements: 55 cm x 46 cm
+            
+            Location: National Gallery of Art, Washington DC, USA
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henriopenwindow.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henridance.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Dance</h2>
+          <p class="p">In 1909 Matisse got a commission by a Russian industrialist named Sergei Shchukin. Who approached Matisse to create for him three enormous scale canvases to brighten the staircase of his chateau, the Trubetskoy Palace, in Moscow.
+
+            In Dance I, the figures are drawn freely, with no inside definition. They appear to be shapeless and their bodies appear to be floating in the air,
+            
+             
+            
+            Completed in: 1909
+            
+            Style: Fauvism
+            
+            Measurements: 259.7 x 390.1 cm
+            
+            Location: Museum of Modern Art, New York
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henridance.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henribluenude.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Blue Nude </h2>
+          <p class="p">Blue Nude is a portrait of a woman lying down on what seems to be a dark grassy's surface with one leg over the other. One of her arms is at the top of her head while the other rests on the ground.
+
+            The strokes used in this painting appear to be sketch-like and you can see the combination of warm and cold colors that were quickly applied onto the canvas. This painting has its own unique style since it applies smooth soft lines with fast brushstrokes.
+            
+            The dark shading is beautifully used to highlight the subtleties within her anatomy. The sketch-like strokes do appear to be less complex and a significant conceptual foundation for this piece. Nevertheless, a few of the lines, highlights, and shadows were not depicted in flawless detail and doesn't show her full shape. For example, her toes and fingers come into the foundation of the background. There appears to some sort of plant behind her as well.
+            
+            Rather than showcase a soft composition of a nude woman. Matisse made an artistic decision to display a woman in a very different fashion and has depicted her in her own unusual style. This painting is unique in relation to the similar nude portraits that were regularly observed and depicted at that time. She appears to have muscle definition and doesn't have the warm female features that were mostly found in nude paintings during that time. 
+            
+            Completed in: 1907
+            
+            Style: Fauvism
+            
+            Measurements: 92.1 cm × 140.3 cm
+            
+            Location: Baltimore Museum of Art
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henribluenude.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henrijoy-of-life.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Joy of Life </h2>
+          <p class="p">During his Fauve years, Matisse often painted scenes in the south of France throughout the late spring. The Joy of Life is one of his signature pieces that was painted during that time.
+
+            The scene is comprised of autonomous themes that are orchestrated together to frame a total structure depicting various subjects who seem to be in a relaxed state. 
+            
+            The joy of Life is a huge scale painting (about 6 feet in tall, 8 feet in wide), portraying an Arcadian scene with splendid shades of trees, an ocean, sky, and nude figures who seem to be in a state of movement. 
+            
+            Completed in: 1906
+            
+            Style: Fauvism
+            
+            Measurements: 175 x 241 cm
+            
+            Location: Barnes Foundation, Lower Merion, PA, US
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henrijoy-of-life.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henrigreenstripe.jpeg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Green Stripe (Portrait of Madame Matisse)</h2>
+          <p class="p">Green Stripe depicts the artist's wife Amélie. This is one of Matisse's most celebrated paintings of the twentieth century due to its colorful and innovative display of hues and tones.
+
+            Matisse utilized various colors to portray his wife. Her oval face is cut up with a slice of green and her hair color has a splash of dark purple with black.
+            
+            The green stripe goes down on the focal point of Amélie's face, like a vertical line that separates the two sides of her face. It's a uniquely original style displaying cool colors on one side and warm colors on the other.
+            
+            Completed in: 1905
+            
+            Style: Fauvism
+            
+            Measurements: 40.5cm. x 32.5 cm
+            
+            Location: Statens Museum for Kunst, Copenhagen
+            
+            Medium: Oil on canvas
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henrigreenstripe.jpeg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/henriwoman-reading.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Woman Reading </h2>
+          <p class="p">The painting shows a quiet and serene scene of a woman with her back towards her observer seating on a wooden chair reading a book.
+
+            In 1896 he showed a few of his paintings at the salon of the Société Nationale des Beaux-Arts and began selling his works, which were bought by the government. Woman Reading a book was one of the major paintings he sold at that event.
+            
+            Completed in: 1894
+            
+            Style: Fauvism
+            
+            Measurements: 61.6 x 47.9 cm
+            
+            Location: Museum of Modern Art in Paris
+            
+            Medium: Oil on canvas
+            
+            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/henriwoman-reading.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./henri.js"></script>
+ </body>
+</html>

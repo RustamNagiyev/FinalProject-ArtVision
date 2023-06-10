@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="claude.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+        <nav>
+          <div>
+            <h1>Art Vision</h1>
+            <button class="menu-btn">
+              <span class="menu-icon"></span>
+            </button>
+          </div>
+          <div class="nav-links">
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./aboutus.html">About Us</a></li>
+              <li><a href="./support.html">Support</a></li>
+              <li><a href="#" id="login-btn">Login</a></li>
+              <li><a href="#" id="register-btn">Register</a></li>
+              <li><a href="./fav.html">Favorite</a></li>
+              <li><a href="#" id="search-btn">Search</a></li>
+            </ul>
+            <div class="search-container">
+              <form>
+                <input type="text" id="search-input" placeholder="Search...">
+                <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      <div id="login-overlay" class="overlay">
+        <div class="overlay-content">
+          <span class="close-btn">&times;</span>
+          <h2>Login</h2>
+          <form id="login-form">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+      
+      <div id="register-overlay" class="overlay">
+        <div class="overlay-content">
+          <span class="close-btn">&times;</span>
+          <h2>Register</h2>
+          <form id="register-form">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username">
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country">
+            <label for="number">Phone Number</label>
+            <input type="tel" id="number" name="number">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password">
+            <label for="password-confirm">Confirm Password</label>
+            <input type="password" id="password-confirm" name="password-confirm">
+            <button type="submit">Register</button>
+          </form>
+        </div>
+      </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Claude_Monet_1899_Nadar_crop.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Claude Monet</h1>
+          <p class="partist">Claude Monet, French impressionist painter. Also known as Oscar-Claude Monet or Claude Oscar Monet. The term Impressionism comes from Monet's painting Impression: Sunrise. Impressionism was the first major revolutionary movement in modern painting.(14.11.1840-05.12.1926)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/claudewater.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">Water Lilies (1896 – 1926)</h2>
+        <p class="p1">Water Lilies is one of Claude Monet’s best paintings and the most famous which he worked on for 30 years before his death.
+
+            In 1893, Monet bought a piece of land in front of his house in Giverny and decided to build a Japanese-style flower garden featuring a pond surrounded by water lilies.
+            
+            Secluded from the outside world, the artist was inspired by its beauty and started working on his water lily series focusing on many elements of the pond.But later, he decided to dispense with the surroundings and focus only on the beautiful lilies, thus creating a series of Water Lilies that constitute around 250 paintings.
+
+            Today, the water lilies are considered to be Claude Monet’s most famous paintings and can be found in a number of museums around the world but the most prominent ones are the covering the walls of the Musée de l’Orangerie in Paris.
+            
+            In fact, these paintings are the highlight of any visit to this Parisian museum.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/claudewater.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/claudeImpression,_Sunrise.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">  Impression, Sunrise (1872)</h2>
+          <p class="p">Impression, Sunrise is another one of Claude Monet’s famous paintings, if not the most famous! The painting depicts the port of Le Havre which was Monet’s hometown.
+
+            Although he painted a series of paintings on the port of Le Havre, Impression, Sunrise became the most famous.Monet painted this beauty in a single sitting as he captured the glorious sunrise and the anchored ships right from the window in his room.
+
+            Though it’s commended for its use of colors to portray depth while still showcasing all the details, it’s the fact that it inspired the name of the impressionist movement that made it famous worldwide.
+            
+            If you want to see Claude Monet’s famous artwork, Impression, Sunrise, you can find it hanging in Musée Marmottan Monet in Paris.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudeImpression,_Sunrise.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudehaystacks.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">Haystacks</h2>
+          <p class="p1">Monet is known for painting the same subject matter in different settings and Haystacks is one of them.
+
+            When Monet saw his farmer neighbor’s stack of hay and how they changed due to changes in light, he was inspired to capture it.
+            
+            He started with just 2, capturing one with sun and one without but he soon realized that the light changed too fast and frequently.Monet requested his stepdaughter to keep bringing him empty canvas so that he could capture every change in light on a different canvas and before he knew it, he had 25 paintings depicting different lighting of the day, weather, and seasons.
+
+            This series is one of the most famous Paintings by Monet and the paintings are scattered all around the world, from the Museum of Fine Arts in Boston, the Museum of Modern Art in New York, etc, but the largest collections are housed in Musée d’Orsay and Musée Marmottan Monet in Paris. 
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudehaystacks.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudepoppy.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Wild Poppies Near Argenteuil (1873)</h2>
+          <p class="p">Painted in 1873, Wild Poppies near Argenteuil captures a beautiful summer scene in a field of poppies near Monet’s home in Argenteuil, France, a place he settled in after his return from England in 1871.
+
+            This painting depicts who are believed to be Monet’s first wife Camille and their son Jean in the foreground as they leisurely stroll in a poppy field on a sunny day. However, there is another mother-son duo in the background of the painting.The painting vividly brings out the bright red and orange poppies against the green of the grass and trees creating a stunning visual effect.
+
+            The Poppy Field near Argenteuil is a classic example of Monet’s talent for capturing the beauty of nature.
+            
+            The painting is one of Claude Monet’s famous artworks and has been praised by art critics for its technical mastery in showing natural light and the movement of the poppy field as blown by the wind. He showcased the painting at the impressionist exhibition in 1874.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudepoppy.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudepoplars.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Poplars (1891)</h2>
+          <p class="p">In the spring and fall of 1891, Monet sat and drew The Poplars, a series of artwork that captured the effect of light on the trees in the marsh at the banks of Epte River, their visual appearance, and how they changed during different hours of the day and seasons.
+
+            The artist sometimes had only a few minutes to capture the essence of the trees in the afternoon light, so he had to work fast to capture what he wanted to show.In fact, at some point, he used a small boat as his studio to be able to vividly capture their beauty at different times.
+
+            But before Monet could finish these paintings, the trees were put up for auction by the village of Limetz.
+            
+            However, selling them would mean that Monet couldn’t finish painting them so he decided to purchase the trees to have enough time to paint them and when he was done, he resold them to the person who wanted to buy them initially.
+            
+            When the paintings were first exhibited, people found them to be too simple and uninteresting. However, they later became one of Claude Monet’s most famous paintings.
+            
+            Like his other paintings, these ones are also scattered around the world with some in The National Museum of Western Art, Tokyo, Museum of Modern Art New York, Philadelphia Museum of Art, National Gallery of Scotland, Edinburgh, and more.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudepoplars.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudesan.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> San Giorgio Maggiore At Dusk (1908 – 1912)</h2>
+          <p class="p">On his first and only trip to Venice, Italy with his wife, Monet was taken aback by the city’s beauty and declared that it was simply too beautiful to paint.
+
+            However, that sentence didn’t hold for long when Monet moved into Hotel Britannia! He was inspired by the impressive view of San Giorgio Maggiore from his window and decided to paint it.
+            
+            Though he painted various paintings focusing on the views of the monastery island of San Giorgio Maggiore, it was the San Giorgio Maggiore at dusk or the Venice dusk that stood out.
+            
+            San Giorgio Maggiore at dusk depicts the view of the island of San Giorgio Maggiore with a focus on the church building that seems to float on water at sunset surrounded by minor domes.
+            
+            With vibrant colors, Monet brought to life the blue skies and the reflection of the church tower on the water.
+
+            The painting can be found at National Museum Cardiff, Wales.            
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudesan.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudewoman.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Woman With A Parasol (1875)</h2>
+          <p class="p">Woman with a Parasol is one of the famous paintings by Claude Monet, and it portrays his wife, Camille, and son Jean in a fleeting moment on a windy summer day.
+
+            The artist intended to keep a casual feel to it, almost as if someone was interrupting the mother-son duo for a quick photo.He captured the swiftness of the fleeting moment with spontaneous strokes of different colors, highlighting the blue sky filled with clouds in the backdrop, the wind blowing the grass and a frenzied and interrupted portrait of his wife and son amidst that.
+
+            What’s even more impressive about this magnificent painting is that Monet painted it in a single sitting even though that meant almost the whole day.
+            
+            The painting is currently hung in the National Gallery of Art, Washington, DC.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudewoman.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudelagare.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> La Gare Saint-Lazare (1877)</h2>
+          <p class="p">By the time Monet painted La Gare Saint-Lazare, he had come to be known for painting landscapes in rural areas.
+
+            Due to critics encouraging painters to shift to painting modern works at the time, he decided to switch things up and focus on modern life, and that’s when he decided to paint this train station.He got permission from the authorities to paint the train station en plein air. As with his fascination with capturing subjects at different times and lights, he painted La Gare Saint-Lazare as a series.
+
+            He never focused on the engineering side of the train station or how crowded it was with travelers, but rather focused on different aspects like when the train was arriving, when space was covered in smoke from the train, and others showing the hall of the train station from different viewpoints and at different lights.
+            
+            One of the paintings in this series is housed in Orsay Museum in Paris, one in Fogg Art Museum, USA, another at Art Institute of Chicago, USA, and others scattered around with a few in private collections.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudelagare.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/claudehouses.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Houses Of Parliament (1900 – 1905)</h2>
+          <p class="p">Just like other Claude Monet’s most famous paintings, Houses of Parliament is also a series of paintings depicting the Palace of Westminster in London, England.
+
+            When Monet first traveled to London in 1870, he fell in love with the city that he vowed to come back at one time to paint it — and that’s exactly what he did.
+            
+            In 1899, he made his way back to London and rented a room with a view to start his work on the city, but for this particular series, he painted them from St Thomas’ Hospital.Unlike his other paintings that portray his subjects from different viewpoints, the paintings in this series are all from the same viewpoint but were painted at different times of the day and weather.
+
+            The series consists of 19 known paintings including one painted during the fog, one showing the sunlight effect, one with the sun breaking through the fog, the stormy sky, the famous sunset, and others.
+            
+            Monet didn’t finish these paintings onsite! He took sketches and for some, he sent for pictures in London and completed them back in his studio in Giverny.
+            
+            Today, some of the paintings from this series can be found at The Art Institute of Chicago, National Gallery of Art Washington, DC., Metropolitan Museum of Art New York, and the ones in Paris can be found in Musée Marmottan Monet, and Musée d’Orsay.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/claudehouses.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+        <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./claude.js"></script>
+ </body>
+</html>

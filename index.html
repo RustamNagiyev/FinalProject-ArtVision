@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+   
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+
+         
+          
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+           
+          </ul>
+         
+
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+
+        <div class="filters">
+          <button id="filter-btn" class="filter-btn active" data-century="15"><img class="imgfilter" src="./pictures/icons8-filter-50.png"> </button>
+          <div class="lightbox2">
+          <button class="century-btn" data-century="century14">14.C.</button>
+          <button class="century-btn" data-century="century15">15.C.</button>
+          <button class="century-btn" data-century="century16">16.C.</button>
+          <button class="century-btn" data-century="century18">18.C.</button>
+          <button class="century-btn" data-century="century19">19.C.</button>
+          <button class="century-btn" data-century="century20">20.C.</button>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username1" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password1" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+    <main>
+      <section>
+     <div class="container">
+   <div class="art">
+    <p class="one">ART</p>
+    <p class="two">
+    Painting is a visual art form that involves applying pigments, dyes, or other colored mediums to a surface such as canvas, paper, wood, or walls to create an image or composition. Painting has been a popular form of artistic expression for thousands of years and has been used for a variety of purposes including religious and cultural rituals, storytelling, political propaganda, and personal expression.
+
+    Painting can be created using a wide range of materials including oil, acrylic, watercolor, gouache, tempera, and encaustic paints. Each type of paint has its own unique properties, allowing artists to create a wide variety of effects and textures on their canvas.
+    
+    One of the most famous painting styles is called "realism," which aims to depict the world as it appears in reality. Another popular style is "impressionism," which focuses on capturing the feeling or impression of a moment rather than a realistic representation.
+    
+    Painting is not only a form of creative expression, but it also has therapeutic benefits. Many people find painting to be a relaxing and meditative activity that allows them to express themselves in a non-verbal way.
+    
+    Overall, painting is a versatile and expressive art form that has been enjoyed by people all over the world for centuries. Whether you're creating a masterpiece or simply enjoying the process, painting can be a rewarding and fulfilling experience.
+  </p> 
+  <button class="btn1" onclick="toggleArt()">Open</button>
+  </div>
+   <div class="artist">
+    <p class="ones">ARTIST</p>
+    <p class="twos">
+    Painters are artists who specialize in creating paintings using various mediums, techniques, and styles. They may work in a variety of settings including studios, galleries, museums, and private collections. Painters may work independently or as part of a larger artistic team.
+
+    The role of a painter involves a range of tasks, including selecting and preparing the painting surface, mixing and applying paint, and experimenting with different techniques to achieve the desired effect. They must also have a good understanding of color theory, composition, and perspective to create visually appealing and impactful paintings.
+    
+    Painters may specialize in a particular style or genre such as portrait, landscape, still life, abstract, or figurative painting. They may also use a variety of mediums, including oil, acrylic, watercolor, or mixed media.
+    
+    To become a painter, one typically needs to have a strong artistic ability, creativity, and a passion for the craft. Many painters pursue formal education and training, such as a degree in fine arts, to further develop their skills and knowledge.
+    
+    Painters often showcase their work in galleries, exhibitions, and art shows and may sell their paintings to collectors, art enthusiasts, or businesses. They may also be commissioned to create custom paintings for individuals or organizations.
+    
+    Overall, painters play an important role in the world of art and culture, creating works that inspire, challenge, and move audiences. Their creativity and skill continue to shape and influence the art world, making painting a timeless and captivating art form.
+  </p>
+  <button class="btn1" onclick="toggleArtist()">Open</button>
+  </div>
+   </div>
+      </section>
+    </main>
+    
+        <section>
+          <div class="headers1">
+            The Most Famous Painters
+          </div>
+            <div class="gallery">
+                <div class="visible">
+                  <div class="image">
+                    <a href="./leonardo.html">
+                      <img src="./pictures/LEONARDO.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century15">Leonardo da Vinci, Spain, (1452-1519)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./vangogh.html">
+                      <img src="./pictures/van.jpg" alt="Vincent van Gogh">
+                      <div class="caption century18">Vincent van Gogh, Holland, (1853-1890)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./picasso.html">
+                      <img src="./pictures/Pablo1.jpg" alt="Pablo Picasso">
+                      <div class="caption century19">Pablo Picasso, Spain, (1881-1973)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./caravaggio.html">
+                      <img src="./pictures/Bild-Ottavio_Leoni,_Caravaggio.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century16">Caravaggio, İtaly, (1571-1610)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./claude.html">
+                      <img src="./pictures/Claude_Monet_1899_Nadar_crop.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century19">Claude Monet, Fransa, (1840-1926)</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hidden">
+                  <div class="image">
+                    <a href="./diego.html">
+                      <img src="./pictures/diegovelazquez.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century16"> Diego Valezquez, Spain, (1599-1660)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./goya.html">
+                      <img src="./pictures/goya_vicente_lopez.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century18">Francisco De Goya, Spain, (1746-1828)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./henri.html">
+                      <img src="./pictures/henrymatisse.jpg" alt="Pablo Picasso">
+                      <div class="caption century19">Henri Matisse, France, (1869-1954)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./joseph.html">
+                      <img src="./pictures/Joseph_Mallord_William_Turner_Self_Portrait_1799.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century18">Joseph Mallord William Turner, England, (1775-1851)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./michelangelo.html">
+                      <img src="./pictures/michelangelo.jpg" alt="Vincent van Gogh">
+                      <div class="caption century15">Michelangelo, İtaly, (1475-1564)</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hidden2">
+                  <div class="image">
+                    <a href="./paul.html">
+                      <img src="./pictures/Paul-Cezanne.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century19">Paul Cezanne, France, (1839-1906)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./jan.html">
+                      <img src="./pictures/Portrait_of_a_Man_by_Jan_van_Eyck-small.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century14">Jan Van Eyck, Holland, (1390-1441)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./raffaello.html">
+                      <img src="./pictures/Raffaello_Sanzio.jpg" alt="Vincent van Gogh">
+                      <div class="caption century15">Raffaello, Italy, (1483-1520)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./rembrandt.html">
+                      <img src="./pictures/Rembrandt(Kenwood).jpg" alt="Leonardo da Vinci">
+                      <div class="caption century16"> Rembrandt Van Rijn, Holland, (1606-1669)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./salvador.html">
+                      <img src="./pictures/salvador-dali-1024.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century19">Salvador Dali, Spain, (1904-1989)</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="hidden3">
+                  <div class="image">
+                    <a href="./albrecht.html">
+                      <img src="./pictures/Self-portrait_by_Albrecht_Dürer.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century15"> Albrecht Dürer, Germany, (1471-1528)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./wassily.html">
+                      <img src="./pictures/Vassily-Kandinsky.jpeg" alt="Vincent van Gogh">
+                      <div class="caption century19">Wassily Kandinsky, Russia (1866-1944)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./edouard.html">
+                      <img src="./pictures/Édouard_Manet,_en_buste,_de_face_-_Nadar.jpg" alt="Pablo Picasso">
+                      <div class="caption century18">Edouard Manet, France, (1832-1883)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./gauguin.html">
+                      <img src="./pictures/gettyimages-640483675.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century19">Paul Gauguin, France, (1848-1903)</div>
+                    </a>
+                  </div>
+                  <div class="image">
+                    <a href="./zdzislaw.html">
+                      <img src="./pictures/adzislawbeksinski.jpg" alt="Leonardo da Vinci">
+                      <div class="caption century20">Zdzislaw Beksinski, Polish, (1929-2005)</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            <button id="showMoreBtn" onclick="showMore()">Open</button>
+           
+            <div class="headers1">
+              The Most Famous Paintings
+            </div>
+           
+            <div class="bestart">
+              <div class="slider">
+                <div class="slide">
+                  <img src="./pictures/Ademinyaradilisi.jpg">
+                  <div class="caption"> Creazione di Adamo</div>
+                </div>
+                <div class="slide">
+                  <img src="./pictures/010-Öpücük-The-Kiss-Klimt.jpg">
+                  <div class="caption">The kiss</div>
+                </div>
+                <div class="slide">
+                <img src="./pictures/ciglik.jpg">
+                <div class="caption">The Scream</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/Girl_with_a_Pearl_Earring.jpg">
+                <div class="caption">Girl with a Pearl Earring</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-the-birth-of-venus-venusun-dogusu-sandro-botticelli.jpg">
+                <div class="caption">The Birth of Venus </div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/guernicapablo.jpg">
+                <div class="caption"> Guernica</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/LeonardodaVinciMonaLisa.jpg">
+                <div class="caption">Mona Lisa</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/sonaxsamyemeyi.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/vangece.jpg">
+                <div class="caption">The Starry Night</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/yaddasindavamliligi.jpg">
+                <div class="caption">The Persistence of Memory</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-las-meninas-nedimeler-diego-velazquez.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-the-lovers-asiklar-rene-magritte.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-the-night-watch-gece-devriyesi-rembrandt-van-rjin.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-grant-wood-american-gothic-amerikan-gotigi.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-the-garden-of-earthly-delights-dunyevi-zevkler-bahcesi-hieronymus-bosch-1.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-whistlers-mother-whistlerin-annesi-gri-ve-beyazla-duzenleme-no-1-james-abbott-mcneill-whistler-1.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-nighthawks-gece-kuslari-edward-hopper.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-bulutlarin-uzerinde-yolculuk-sis-denizinde-amacsizca-dolasan-adam-der-wanderer-uber-dem-benelmeer-caspar-david-friedrich-3.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-the-great-wave-buyuk-dalga-katsushika-hokusai-2.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/dunyanin-en-unlu-tablolari-listelist-saturno-devorando-a-un-hijo-cocuklarini-yiyen-saturn-francisco-goya-saturn-tablosu-1.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/swing-salincak-jean-honore-fragonard.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              <div class="slide">
+                <img src="./pictures/bir-pazar-ogleden-sonrasi.jpg">
+                <div class="caption">The Last Supper</div>
+              </div>
+              </div>
+              <button class="prev-btn">&lt;</button>
+              <button class="next-btn">&gt;</button>
+              </div>
+              
+              
+            
+          </section>
+      
+   <div class="scrollpagediv">
+          <button class="scrollpage" onclick="topFunction()">^</button>
+        </div>
+    <footer>
+     <div class="ending">
+      <div class="aboutfooter">About us</div>
+      <div class="conteiner2">
+      <div class="flex">
+        <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+         Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+         Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+         The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+        
+         If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+         <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+         <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+        </div>
+        
+        <div class="flex">
+        <div class="flex2">
+  <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+  <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+  <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+  <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+ 
+   
+  
+</div>
+
+</div>
+
+      </div>
+     </div>
+    
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+ </html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="albrecht.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+   
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/Self-portrait_by_Albrecht_Dürer.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Albrecht Dürer</h1>
+          <p class="partist">Albrecht Dürer, German painter, mathematician and printer. He practices late gothic Flemish art. Along with Rembrant and Goya, he is one of the most important names in the old editions. He was born and died in Nuremberg, Germany. Dürer's father was a jeweler who came from Hungary in 1455 and settled in Nuremberg.(21.05.1471-06.04.1528)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/Self-portrait_by_Albrecht_Dürer.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h2">Self-portrait</h2>
+        <p class="p">Painted in early 1500 – just before his 29th birthday – Self Portrait has become the most iconic image of the German artist. By choosing a pose in which he directly faces the viewer, Durer presents himself in monumental fashion – during the period, such a pose was typically reserved for renderings of Jesus Christ. The painting’s symmetry and dark tones, as well as Durer’s hand gesture (as if in the act of giving a blessing) are all similar to religious portraits of the era.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/Self-portrait_by_Albrecht_Dürer.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/albrechtadameve.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">Adam and Eve</h2>
+          <p class="p">Adam and Eve reveals Durer’s fascination with the idea of the perfect human form and its relation to proportion and measurements, a subject that was especially popular in Renaissance Italy. In fact, towards the end of his life, he wrote several books outlining his theories on the matter. The poses of Adam and Eve are idealized and symmetrical – each figure puts weight on one leg while the other leg is bent, and each has one arm angled slightly upward. Also making an appearance in this engraving – a medium that Durer mastered by the early 16th century – are four animals representing the four medieval temperaments: the cat is choleric, the rabbit sanguine, the ox phlegmatic and the elk melancholic.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtadameve.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrechtPraying_Hands.png" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Praying Hands</h2>
+          <p class="p">Praying Hands is arguably Durer’s best-known painting. Done with ink on blue paper, the drawing is simple – it shows two male hands in the act of prayer. Durer completed it as a sketch for a painted altarpiece, which was subsequently destroyed by a fire in 1729. In the modern era, Praying Hands has become an international symbol of piety and is surely one of the most reproduced images to date.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtPraying_Hands.png"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrecht_Dürer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Great (Large) Piece of Turf</h2>
+          <p class="p">Similar to Young Hare, this landmark work is important because it is a masterpiece of natural studies during a time when realism had yet to arrive in the field of botanic illustration. In this painting, Durer meticulously depicted a collection of common plants – including all the roots, buds and leaves – while sparing no detail. Among the species of plants identified in the work are daisies, dandelions and yarrow.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrecht_Dürer_-_The_Large_Piece_of_Turf,_1503_-_Google_Art_Project.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrechtsaintjeromeDürer-Hieronymus-im-Gehäus.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Saint Jerome in his Study</h2>
+          <p class="p">Saint Jerome in His Study was completed in 1514 and shows the scholar-saint sitting behind a desk, engrossed in his work. Yhis copperplate engraving is loaded with symbolism. On the corner of the table is a cross, representing resurrection, and to the left of it on the window sill lies a skull, symbolizing death. The lion in the foreground is connected to the traditional iconography of Saint Jerome, while the dog lying nearby represents loyalty and is a recurring animal in Durer’s works.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtsaintjeromeDürer-Hieronymus-im-Gehäus.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrechtfourholy.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21">The Four Apostles/The Four Holy Men</h2>
+          <p class="p1">The last of his large works, The Four Apostles is a panel painting that Durer finished in 1526. By this point in his life, Durer had returned to his hometown of Nuremberg. He wanted to show his respect for the city council by donating a work that would serve as an example of good governance (a practice made common by artists in Italy). He did so with this larger-than-life painting of the four apostles, each recognizable thanks to his iconography: John the Evangelist (open book), Peter (keys), Mark (scroll) and Paul (sword and closed book). ‘The Four Apostles’ is on display at the Alte Pinakothek in Munich, despite efforts by the city of Nuremberg to have it returned to its original place.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtfourholy.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrechtelder.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Elder with a Rosary’s</h2>
+          <p class="p">This small portrait is located in the Uffizi Gallery in Florence, Italy, and is Durer’s earliest surviving oil painting, completed in 1490 when he was only 18 years old. It shows the artist’s father, the goldsmith Albrecht the Elder, at the age of 62 or 63. The Durer family was very close; the artist would later describe his father as a man who “lived an honourable, Christian life, was a man patient of spirit, mild and peaceable to all, and very thankful towards God.” A similar painting of Durer’s mother, Barbara Holper, is currently located in Nuremberg. It is believed that the two portraits were created to hang together as a diptych, but they have been separated since at least 1628.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtelder.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrechtmadonna_and_child__obverse__1952.2.16.a.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Madonna and Child</h2>
+          <p class="p">Durer traveled to Venice towards the end of the 15th century, where he became well acquainted with the artist Giovanni Bellini, whose influence is apparent in this work. The athletic-looking Christ child, the pyramid structure of the Virgin and the blue and red colors are all reminiscent of Bellini’s rendering of the same subject matter. A small coat of arms in the lower left corner identifies the patron as a member of the wealthy Nuremberg family of Haller von Hallerstein. The painting was acquired by American businessman Samuel Kress in the mid-20th century, who later donated it to the National Gallery of Art in Washington DC, where it remains.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtmadonna_and_child__obverse__1952.2.16.a.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/albrechtmartyrdom.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Martyrdom of the Ten Thousand</h2>
+          <p class="p">This oil painting was commissioned by Frederick III for the All Saints’ Church in Wittenberg, Germany. This altarpiece portrays the legend of the ten thousand Christians who were killed on Mount Ararat in a massacre carried out by Persian King Saporat at the behest of the Roman Emperors Hadrian and Antonius. Prior to this undertaking, Durer had never tackled a composition with so many figures. He even included himself in the middle of the scene, as the figure dressed in black holding a staff.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/albrechtmartyrdom.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel </span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress </span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./albrecht.js"></script>
+ </body>
+</html>

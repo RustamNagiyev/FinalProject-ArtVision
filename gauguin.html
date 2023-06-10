@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web Sayfam</title>
+    <link rel="stylesheet" href="gauguin.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div>
+          <h1>Art Vision</h1>
+          
+          <button class="menu-btn">
+            <span class="menu-icon"></span>
+          </button>
+        </div>
+        <div class="nav-links">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./aboutus.html">About Us</a></li>
+            <li><a href="./support.html">Support</a></li>
+            <li><a href="#" id="login-btn">Login</a></li>
+            <li><a href="#" id="register-btn">Register</a></li>
+            <li><a href="./fav.html">Favorite</a></li>
+            <li><a href="#" id="search-btn">Search</a></li>
+          </ul>
+          <div class="search-container">
+            <form>
+              <input type="text" id="search-input" placeholder="Search...">
+              <button type="submit"><img class="imgsearch" src="./pictures/icons8-search.svg"></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    
+    <div id="login-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    
+    <div id="register-overlay" class="overlay">
+      <div class="overlay-content">
+        <span class="close-btn">&times;</span>
+        <h2>Register</h2>
+        <form id="register-form">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country">
+          <label for="number">Phone Number</label>
+          <input type="tel" id="number" name="number">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password">
+          <label for="password-confirm">Confirm Password</label>
+          <input type="password" id="password-confirm" name="password-confirm">
+          <button type="submit">Register</button>
+        </form>
+      </div>
+    </div>
+
+
+<section>
+
+    <div class="back">
+    <div class="container2">
+        <img class="imgartist" src="./pictures/paulgauguin.jpg" alt="Resim Açıklaması">
+        <div class="content2 hidden2">
+          <h1 class="hartist">Paul Gauguin</h1>
+          <p class="partist">Eugène Henri Paul Gauguin, French painter. Eugène Henri Paul Gauguin is a Post-Impressionist painter, born June 7, 1848, in Paris. He settled in Peru with his family in 1851.(07.06.1848-08.05.1903)</p>
+        </div>
+        <button class="btn3" onclick="toggleContent2()">(.......)</button>
+      </div>
+    </div>
+
+    <div class="container">
+      <img class="img" src="./pictures/gauguin-1881-The_Little_One_is_Dreaming.jpg" alt="Resim Açıklaması" height="400">
+      <div class="content">
+        <h2 class="h21">The Little One Is Dreaming (1881)</h2>
+        <p class="p1">Depicting his daughter, Aline, asleep on a cot, Gauguin’s work ‘The Little One is Dreaming’ is an early example of his forays into symbolic painting.
+            At first glance, this piece appears to be realist but there are a few features that point towards the symbolism for which Paul Gauguin is best known.Gauguin draws from his imagination to paint dreamlike representations into the composition. Above the child’s head, for instance, black birds are taking flight and a Punch toy hangs from the edge of the bed. This doll is a motif that Gauguin returned to frequently in his paintings.
+        </p>  
+      </div>
+      <button id="show-more">Open</button>
+    </div>
+    <button class="favori" data-src="./pictures/gauguin-1881-The_Little_One_is_Dreaming.jpg"></button>
+    </div>
+
+    <div class="container">
+        <img class="img" src="./pictures/gauguin,_Paul_-_Landscape_near_Arles_-_Google_Art_Project.jpg" alt="Resim Açıklaması"  height="400">
+        <div class="content">
+          <h2 class="h2">  Landscape near Arles (1888)</h2>
+          <p class="p">One of very few landscapes Gauguin painted without human figures, ‘Landscape near Arles’ was produced while he was staying in Provence.
+            Rather than painting forms directly from nature, as in the work of Impressionists like Alfred Sisley, Gauguin instead simplified this landscape into a series of geometric forms.
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguin,_Paul_-_Landscape_near_Arles_-_Google_Art_Project.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguinblue-trees-53_3889.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Blue Trees [Your Turn Will Come, My Beauty!] (1888)</h2>
+          <p class="p">During his stay with Van Gogh in Arles, Gauguin painted ‘Blue Trees’ featuring four strong vertical lines of bright blue tree trunks.
+            Between the trees, there is a landscape of dazzling, dreamlike colours: a yellow sky, red clouds, a line of blue undergrowth and a bright orange path.
+            
+            
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguinblue-trees-53_3889.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguinnight-café-arles-1888.jpg!Large.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h21"> Night Cafe, Arles (1888)</h2>
+          <p class="p1">In November 1888, Gauguin co-wrote a letter with Van Gogh to send to the artist Émile Bernard.
+            The letter described their experiences in the early days of living together in the Yellow House at Arles.The letter also referenced Gauguin’s painting ‘Night Cafe, Arles’:
+
+            “Now something that will interest you – we’ve made some excursions in the brothels, and it’s likely that we’ll eventually go there often to work. ... At the moment Gauguin has a canvas in progress of the same night cafe that I also painted, but with figures seen in the brothels. It promises to become a beautiful thing.”
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguinnight-café-arles-1888.jpg!Large.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguin_1888_La_Vague.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> La Vague (1888)</h2>
+          <p class="p">Gauguin regularly chose to compose his landscapes using an elevated perspective, inspired by the Japanese prints that were enormously popular in France at this time.
+            In ‘La Vague’ or ‘The Wave’, this effect is extreme with the viewer looking down from an almost vertical height at the coastal scene below.
+            
+        </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguin_1888_La_Vague.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguinvisionafterthesermon.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">Vision After the Sermon (1888)</h2>
+          <p class="p">“I like living in Brittany; here I find a savage, primitive quality,” wrote Gauguin in February 1888.
+            In this piece, we see Gauguin go some way to expressing that quality on his canvas.Gauguin had a strong desire to find a new kind of expression in painting and while in Pont-Aven in August 1888 he began to realise those aims.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguinvisionafterthesermon.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguin-christ-in-garden.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Christ in the Garden of Olives (1889)</h2>
+          <p class="p">In a letter to Van Gogh, Gauguin described his latest painting:
+            “Blue-green sky in the west, all the trees bent in a purple mass, the earth is violet and Christ is dressed in a dark ochre attire, his hair vermillion. The canvas is not intended to be understood. I shall keep it for myself for a long time.”
+            
+            The piece was ‘Christ in the Garden of Olives’.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguin-christ-in-garden.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguinselfself.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2"> Self-Portrait with the Yellow Christ (1890/91)</h2>
+          <p class="p">This self-portrait was painted shortly before Gauguin’s departure to Tahiti for the first time.
+            Within the painting, we can see the artist ruminating on different parts of his personality through his own artworks.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguinselfself.jpg"></button>
+      </div>
+
+      <div class="container">
+        <img class="img" src="./pictures/gauguinancestors.jpg" alt="Resim Açıklaması" height="400">
+        <div class="content">
+          <h2 class="h2">The Ancestors of Tehamana (1893)</h2>
+          <p class="p">In 1891, Gauguin arrived in Papeete, the capital of Tahiti.
+            Tahiti was a French colony and Gauguin - like many other French expats - married a local.This was extremely controversial, on account of the fact that Gauguin's new wife - Tehamana - was only 13 years old. To make matters worse, the marriage was arranged by Gauguin's bride's family over the course of an afternoon.
+
+            In fact there were loads of further problems: Gauguin had abandoned a wife and five children in France, and was suffering from syphilis.
+          </p>  
+        </div>
+        <button id="show-more">Open</button>
+      </div>
+      <button class="favori" data-src="./pictures/gauguinancestors.jpg"></button>
+      </div>
+  </section>
+
+
+<footer>
+    <div class="ending">
+     <div class="aboutfooter">About us</div>
+     <div class="conteiner2">
+     <div class="flex">
+       <p class="aboutp">Paintings and paintings have been one of the most important forms of expression of art throughout human history. We are here as a page that understands the importance of these works of art and wants to help people understand them better.
+        Our aim is to bring together information about the life of paintings and painters and to convey the meanings of these works to our readers. On our page, we feature the works of painters from different periods and styles.
+        Our aim is to enable art lovers and anyone interested in art to come to our page and have more information about paintings and painters.
+        The purpose of our page is to emphasize the power and importance of art and to convey the beauty and meanings of art to a wider audience. Therefore, we strive to ensure that the information on our page is accurate and reliable.
+       
+        If you are also interested in art and paintings, you can come to our page and learn more about paintings and painters.</p>
+        <span class="end">Tel :</span><span class="end3">+994505300369</span> 
+       <br> <span class="end">Adress :</span><span class="end3"> Azerbycan,Baku,vil.Biladjari</span> 
+       </div>
+       
+       <div class="flex">
+       <div class="flex2">
+ <img class="endimg" src="./pictures/5282541_fb_social media_facebook_facebook logo_social network_icon.svg">
+ <img class="endimg" src="./pictures/5282544_camera_instagram_social media_social network_instagram logo_icon.svg">
+</div>
+<div class="flex2">
+ <img class="endimg" src="./pictures/5282549_call_chat_mobile_whatsapp_whatsapp logo_icon.svg">
+ <img class="endimg" src="./pictures/5282551_tweet_twitter_twitter logo_icon.svg">
+
+  
+ 
+</div>
+
+</div>
+
+     </div>
+    </div>
+   </footer>
+   <script src="./gauguin.js"></script>
+ </body>
+</html>
